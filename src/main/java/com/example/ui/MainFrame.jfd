@@ -12,6 +12,7 @@ new FormModel {
 			"$sizePolicy": 1
 			"defaultCloseOperation": 3
 			"iconImage": new com.jformdesigner.model.SwingIcon( 0, "/icons/form-icon.png" )
+			"minimumSize": new java.awt.Dimension( 300, 200 )
 			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class net.miginfocom.swing.MigLayout ) {
 				"$layoutConstraints": "fill,hidemode 3"
 				"$columnConstraints": "[fill][fill]"
