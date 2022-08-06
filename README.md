@@ -4,8 +4,8 @@ This serves to demonstrate how Java Swing is a viable option for creating cross-
 
 This project brings together several things in order to create a modern looking desktop application that can be
 distributed. Installers it generates includes only the necessary files in order for the application to run on another
-computer, which can be as small as 50mb. It doesn't require end-users to install (or have installed) the Java runtime
-and it does't include the full Java runtime.
+computer, which can be as small as 50mb. It doesn't require end-users install (or have installed) the Java runtime
+and it doesn't include the full Java runtime.
 
 This example application includes theming, obfuscation, packaging, and generating the installers.
 
