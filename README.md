@@ -35,7 +35,7 @@ application.
 - Windows: install [WIX](https://wixtoolset.org/)
 - Ubuntu-based distros: run: ```sudo apt-get install build-essentials```
 - Fedora: run: ```sudo dnf install fedora-packager fedora-review```
-- macOS: ??? (I don't own a mac)
+- macOS: Xcode and ??? (I don't own a mac, maybe all you need is Xcode)
 
 ### Build Installer For Distribution
 
@@ -52,7 +52,7 @@ TBD
 
 ### Example/Demo
 
-Just clone this repo and run the main method or build a distributable and install it.
+Just clone this repo and run the main method or build an installation package and install it.
 
 ### Pull Requests/Contributing
 
