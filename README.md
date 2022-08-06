@@ -39,7 +39,11 @@ application.
 
 ### Build Installer For Distribution
 
-Using maven, run **install** (Lifecycle) on the OS you wish to create an installer for.
+Using maven, run **install** (Lifecycle) on the OS you wish to create an installer for. If you're using IntelliJ you can
+do this within the IDE itself from the Maven panel otherwise you'll need a **recent** version of Maven installed on your
+computer.
+
+From terminal:
 
 ```shell
 mvn clean
@@ -52,7 +56,14 @@ TBD
 
 ### Example/Demo
 
-Just clone this repo and run the main method or build an installation package and install it.
+Just clone this repo and run the main method. You can also create an installation package and install it. That'll give
+you best idea of how everything works and what it's like from an end-user perspective.
+
+### Another Demo
+
+([FlatLaf](https://github.com/JFormDesigner/FlatLaf)) provides a great demo .jar that includes all the available
+themes, so you get an idea what your app can look like. You can download their demo under the **Demo** section of their
+readme. Just click demo below the Demo heading.
 
 ### Pull Requests/Contributing
 
