@@ -4,31 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0cb700bb-deb0-48e7-b52e-381d10363ecb" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LICENSE.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/App.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/config/AppConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/theme/ThemeManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/ui/AboutFrame.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/ui/AboutFrame.jfd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/ui/MainFrame.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/ui/MainFrame.jfd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/util/AppUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/icons/app-icon.icns" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/icons/app-icon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/icons/app-icon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/icons/form-icon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/packaging/add-launch-to-msi.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/packaging/linux-jpackage.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/packaging/mac-jpackage.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/packaging/win-jpackage.txt" afterDir="false" />
+    <list default="true" id="0cb700bb-deb0-48e7-b52e-381d10363ecb" name="Changes" comment="Initial commit">
+      <change beforePath="$PROJECT_DIR$/.attach_pid73873" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -196,14 +175,26 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1659786337338</updated>
-      <workItem from="1659786338395" duration="9071000" />
+      <workItem from="1659786338395" duration="9457000" />
     </task>
+    <task id="LOCAL-00001" summary="Initial commit">
+      <created>1659795804032</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1659795804033</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="CHECK_NEW_TODO" value="false" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="Initial commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="Initial commit" />
   </component>
 </project>
