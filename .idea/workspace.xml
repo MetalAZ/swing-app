@@ -173,7 +173,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1659786337338</updated>
-      <workItem from="1659786338395" duration="13425000" />
+      <workItem from="1659786338395" duration="13670000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1659795804032</created>
@@ -231,7 +231,14 @@
       <option name="project" value="LOCAL" />
       <updated>1659799716537</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Fixed package name">
+      <created>1659800021409</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1659800021409</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -248,6 +255,7 @@
     <MESSAGE value="Updated docs" />
     <MESSAGE value="Updated light theme" />
     <MESSAGE value="Misc changes" />
-    <option name="LAST_COMMIT_MESSAGE" value="Misc changes" />
+    <MESSAGE value="Fixed package name" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed package name" />
   </component>
 </project>

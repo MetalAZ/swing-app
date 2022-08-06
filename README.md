@@ -59,7 +59,7 @@ TBD
 Just clone this repo and run the main method. You can also create an installation package and install it. That'll give
 you best idea of how everything works and what it's like from an end-user perspective.
 
-### Another Demo
+### Another Demo (Theming)
 
 ([FlatLaf](https://github.com/JFormDesigner/FlatLaf)) provides a great demo .jar that includes all the available
 themes, so you get an idea what your app can look like. You can download their demo under the **Demo** section of their
