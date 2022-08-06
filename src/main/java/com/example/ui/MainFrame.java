@@ -139,6 +139,7 @@ public class MainFrame extends JFrame {
             //======== themeMenu ========
             {
                 themeMenu.setText("Theme");
+                themeMenu.setMnemonic('T');
 
                 //---- lightTheme ----
                 lightTheme.setText("Light");
@@ -155,6 +156,7 @@ public class MainFrame extends JFrame {
             //======== helpMenu ========
             {
                 helpMenu.setText("Help");
+                helpMenu.setMnemonic('H');
 
                 //---- aboutMenu ----
                 aboutMenu.setText("About");

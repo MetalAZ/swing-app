@@ -4,8 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0cb700bb-deb0-48e7-b52e-381d10363ecb" name="Changes" comment="Added ent">
+    <list default="true" id="0cb700bb-deb0-48e7-b52e-381d10363ecb" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/ui/AboutFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/ui/AboutFrame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/ui/AboutFrame.jfd" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/ui/AboutFrame.jfd" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/ui/MainFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/ui/MainFrame.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/ui/MainFrame.jfd" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/ui/MainFrame.jfd" afterDir="false" />
     </list>
@@ -176,7 +178,8 @@
       <option name="presentableId" value="Default" />
       <updated>1659786337338</updated>
       <workItem from="1659786338395" duration="14135000" />
-      <workItem from="1659801264751" duration="530000" />
+      <workItem from="1659801264751" duration="1607000" />
+      <workItem from="1659805758027" duration="141000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1659795804032</created>
@@ -248,7 +251,14 @@
       <option name="project" value="LOCAL" />
       <updated>1659800242531</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Updates hello message when enter key is pressed">
+      <created>1659801829659</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1659801829659</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -267,6 +277,7 @@
     <MESSAGE value="Misc changes" />
     <MESSAGE value="Fixed package name" />
     <MESSAGE value="Updated for clarification" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated for clarification" />
+    <MESSAGE value="Updates hello message when enter key is pressed" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updates hello message when enter key is pressed" />
   </component>
 </project>

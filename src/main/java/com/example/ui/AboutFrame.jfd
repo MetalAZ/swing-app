@@ -9,6 +9,8 @@ new FormModel {
 			"modalityType": enum java.awt.Dialog$ModalityType APPLICATION_MODAL
 			"title": "About"
 			"defaultCloseOperation": 2
+			"resizable": false
+			"type": enum java.awt.Window$Type UTILITY
 			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.BorderLayout ) ) {
 				name: "dialogPane"
 				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class net.miginfocom.swing.MigLayout ) {
@@ -59,7 +61,7 @@ new FormModel {
 					} )
 					add( new FormComponent( "com.jformdesigner.designer.wrapper.VSpacer" ) {
 						name: "vSpacer1"
-						"minimumSize": new java.awt.Dimension( 20, 20 )
+						"minimumSize": new java.awt.Dimension( 20, 15 )
 					}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
 						"value": "cell 2 3"
 					} )
@@ -71,7 +73,7 @@ new FormModel {
 					} )
 					add( new FormComponent( "com.jformdesigner.designer.wrapper.VSpacer" ) {
 						name: "vSpacer2"
-						"minimumSize": new java.awt.Dimension( 20, 20 )
+						"minimumSize": new java.awt.Dimension( 20, 15 )
 					}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
 						"value": "cell 2 5"
 					} )

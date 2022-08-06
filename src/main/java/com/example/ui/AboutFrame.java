@@ -84,6 +84,8 @@ public class AboutFrame extends JDialog {
         setModalityType(Dialog.ModalityType.APPLICATION_MODAL);
         setTitle("About");
         setDefaultCloseOperation(WindowConstants.DISPOSE_ON_CLOSE);
+        setResizable(false);
+        setType(Window.Type.UTILITY);
         var contentPane = getContentPane();
         contentPane.setLayout(new BorderLayout());
 
@@ -95,20 +97,20 @@ public class AboutFrame extends JDialog {
             {
                 contentPanel.setBorder(new EmptyBorder(5, 25, 5, 25));
                 contentPanel.setLayout(new MigLayout(
-                        "fillx,insets dialog,hidemode 3,gap 8 4",
-                        // columns
-                        "[fill]" +
-                                "[fill]" +
-                                "[fill]",
-                        // rows
-                        "[]" +
-                                "[]" +
-                                "[]" +
-                                "[]" +
-                                "[]" +
-                                "[]" +
-                                "[]" +
-                                "[]"));
+                    "fillx,insets dialog,hidemode 3,gap 8 4",
+                    // columns
+                    "[fill]" +
+                    "[fill]" +
+                    "[fill]",
+                    // rows
+                    "[]" +
+                    "[]" +
+                    "[]" +
+                    "[]" +
+                    "[]" +
+                    "[]" +
+                    "[]" +
+                    "[]"));
 
                 //---- appIcon ----
                 appIcon.setIcon(new ImageIcon(getClass().getResource("/icons/form-icon.png")));
@@ -118,13 +120,13 @@ public class AboutFrame extends JDialog {
                 //======== panel1 ========
                 {
                     panel1.setLayout(new MigLayout(
-                            "fillx,insets 0,hidemode 3",
-                            // columns
-                            "[fill]",
-                            // rows
-                            "[]" +
-                                    "[]" +
-                                    "[]"));
+                        "fillx,insets 0,hidemode 3",
+                        // columns
+                        "[fill]",
+                        // rows
+                        "[]" +
+                        "[]" +
+                        "[]"));
 
                     //---- appName ----
                     appName.setText("App Name");
@@ -142,7 +144,7 @@ public class AboutFrame extends JDialog {
                 contentPanel.add(javaRuntime, "cell 2 2,pushx");
 
                 //---- vSpacer1 ----
-                vSpacer1.setMinimumSize(new Dimension(20, 20));
+                vSpacer1.setMinimumSize(new Dimension(20, 15));
                 contentPanel.add(vSpacer1, "cell 2 3");
 
                 //---- appIconBy ----
@@ -150,7 +152,7 @@ public class AboutFrame extends JDialog {
                 contentPanel.add(appIconBy, "cell 2 4");
 
                 //---- vSpacer2 ----
-                vSpacer2.setMinimumSize(new Dimension(20, 20));
+                vSpacer2.setMinimumSize(new Dimension(20, 15));
                 contentPanel.add(vSpacer2, "cell 2 5");
 
                 //---- websiteLink ----
@@ -166,11 +168,11 @@ public class AboutFrame extends JDialog {
             //======== buttonBar ========
             {
                 buttonBar.setLayout(new MigLayout(
-                        "insets dialog,alignx right",
-                        // columns
-                        "[button,fill]",
-                        // rows
-                        null));
+                    "insets dialog,alignx right",
+                    // columns
+                    "[button,fill]",
+                    // rows
+                    null));
 
                 //---- okButton ----
                 okButton.setText("OK");
