@@ -5,13 +5,80 @@ new FormModel {
 	root: new FormRoot {
 		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class net.miginfocom.swing.MigLayout ) {
 			"$layoutConstraints": "fillx,hidemode 3"
-			"$columnConstraints": "[fill][fill]"
-			"$rowConstraints": "[][][]"
+			"$columnConstraints": "[fill]"
+			"$rowConstraints": "[]"
 		} ) {
 			name: "this"
+			"$sizePolicy": 1
+			"defaultCloseOperation": 3
+			"iconImage": new com.jformdesigner.model.SwingIcon( 0, "/icons/form-icon.png" )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class net.miginfocom.swing.MigLayout ) {
+				"$layoutConstraints": "fill,hidemode 3"
+				"$columnConstraints": "[fill][fill]"
+				"$rowConstraints": "[][][]"
+			} ) {
+				name: "panel1"
+				add( new FormComponent( "com.jformdesigner.designer.wrapper.VSpacer" ) {
+					name: "vSpacer1"
+					"minimumSize": new java.awt.Dimension( 12, 20 )
+				}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+					"value": "cell 0 0"
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "helloMessage"
+					"text": "Hello..."
+					"font": new java.awt.Font( "Inter", 1, 24 )
+					"horizontalAlignment": 0
+				}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+					"value": "cell 0 1 2 1"
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "name"
+					"text": "Developer"
+				}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+					"value": "cell 0 2,pushx"
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "changeHello"
+					"text": "Hello"
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "changeHello", true ) )
+				}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+					"value": "cell 1 2"
+				} )
+			}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+				"value": "cell 0 0"
+			} )
 		}, new FormLayoutConstraints( null ) {
 			"location": new java.awt.Point( 0, 0 )
-			"size": new java.awt.Dimension( 400, 300 )
+			"size": new java.awt.Dimension( 595, 425 )
+		} )
+		add( new FormContainer( "javax.swing.JMenuBar", new FormLayoutManager( class javax.swing.JMenuBar ) ) {
+			name: "appMenu"
+			add( new FormContainer( "javax.swing.JMenu", new FormLayoutManager( class javax.swing.JMenu ) ) {
+				name: "themeMenu"
+				"text": "Theme"
+				add( new FormComponent( "javax.swing.JCheckBoxMenuItem" ) {
+					name: "lightTheme"
+					"text": "Light"
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "lightThemeClicked", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JCheckBoxMenuItem" ) {
+					name: "darkTheme"
+					"text": "Dark"
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "darkThemeClicked", true ) )
+				} )
+			} )
+			add( new FormContainer( "javax.swing.JMenu", new FormLayoutManager( class javax.swing.JMenu ) ) {
+				name: "helpMenu"
+				"text": "Help"
+				add( new FormComponent( "javax.swing.JMenuItem" ) {
+					name: "aboutMenu"
+					"text": "About"
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "aboutMenuClicked", true ) )
+				} )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 15, 685 )
 		} )
 	}
 }
