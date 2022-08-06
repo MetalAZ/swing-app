@@ -50,20 +50,24 @@ mvn clean
 mvn install
 ```
 
-### Screenshots
-
-TBD
-
 ### Example/Demo
 
 Just clone this repo and run the main method. You can also create an installation package and install it. That'll give
 you best idea of how everything works and what it's like from an end-user perspective.
 
-### Another Demo (Theming)
+### Screenshots & Theming
 
-([FlatLaf](https://github.com/JFormDesigner/FlatLaf)) provides a great demo .jar that includes all the available
-themes, so you get an idea what your app can look like. You can download their demo under the **Demo** section of their
-readme. Just click demo below the Demo heading.
+[FlatLaf](https://github.com/JFormDesigner/FlatLaf) provides screenshots of some of the themes. You can also download
+their latest demo .jar that includes all the available themes, so you get an idea what your app can look like. You can
+download their demo under the **Demo** section of their readme. Just click demo below the Demo heading.
+
+You can also see the upcoming macOS specific themes from a pull
+request: [macOS Themes](https://github.com/JFormDesigner/FlatLaf/pull/533).
+
+### Theme Editor
+
+([FlatLaf Theme Editor](https://www.formdev.com/flatlaf/theme-editor/)) provides the ability to easily create and edit
+themes.
 
 ### Pull Requests/Contributing
 

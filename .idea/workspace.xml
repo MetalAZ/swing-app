@@ -6,8 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="0cb700bb-deb0-48e7-b52e-381d10363ecb" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/ui/MainFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/ui/MainFrame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/ui/MainFrame.jfd" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/ui/MainFrame.jfd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -177,7 +176,7 @@
       <updated>1659786337338</updated>
       <workItem from="1659786338395" duration="14135000" />
       <workItem from="1659801264751" duration="1607000" />
-      <workItem from="1659805758027" duration="754000" />
+      <workItem from="1659805758027" duration="1418000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1659795804032</created>
@@ -263,7 +262,14 @@
       <option name="project" value="LOCAL" />
       <updated>1659805976513</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Set minimum window dimensions">
+      <created>1659806528846</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1659806528846</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -284,6 +290,7 @@
     <MESSAGE value="Updated for clarification" />
     <MESSAGE value="Updates hello message when enter key is pressed" />
     <MESSAGE value="Fixed about window mode and updates app menu mnemonics" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed about window mode and updates app menu mnemonics" />
+    <MESSAGE value="Set minimum window dimensions" />
+    <option name="LAST_COMMIT_MESSAGE" value="Set minimum window dimensions" />
   </component>
 </project>
