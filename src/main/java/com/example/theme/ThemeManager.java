@@ -48,9 +48,9 @@ public class ThemeManager {
 
             isDark = themeInfo.isDark();
 
-            Class<FlatLaf> clazz = (Class<FlatLaf>) Class.forName(themeInfo.getClassName());
-
+            var clazz = (Class<FlatLaf>) Class.forName(themeInfo.getClassName());
             var instance = clazz.getDeclaredConstructor().newInstance();
+            
             FlatLaf.setup(instance);
             FlatLaf.updateUI();
         } catch (NoSuchElementException | NoSuchMethodException | IllegalAccessException | InvocationTargetException |
@@ -65,7 +65,7 @@ public class ThemeManager {
             JFrame.setDefaultLookAndFeelDecorated(false);
             JDialog.setDefaultLookAndFeelDecorated(false);
             FlatLaf.updateUI();
-            
+
             UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
             SwingUtilities.updateComponentTreeUI(window);
         } catch (UnsupportedLookAndFeelException | ClassNotFoundException | InstantiationException |
