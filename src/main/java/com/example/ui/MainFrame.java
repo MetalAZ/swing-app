@@ -21,7 +21,7 @@ public class MainFrame extends JFrame {
 
     public MainFrame() {
         window = this;
-        themeManager = new ThemeManager();
+        themeManager = new ThemeManager(window);
 
         initComponents();
 
