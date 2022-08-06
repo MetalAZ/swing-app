@@ -33,7 +33,7 @@ understand how Java Swing can be used for creating app, I highly recommend creat
 application.
 
 - Windows: install [WIX](https://wixtoolset.org/)
-- Ubuntu-based distros: run: ```sudo apt-get install build-essentials```
+- Ubuntu-based distros: run: ```sudo apt-get install build-essential```
 - Fedora: run: ```sudo dnf install fedora-packager fedora-review```
 - macOS: Xcode and ??? (I don't own a mac, maybe all you need is Xcode)
 
