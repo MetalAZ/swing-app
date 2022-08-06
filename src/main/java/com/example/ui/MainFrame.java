@@ -37,7 +37,7 @@ public class MainFrame extends JFrame {
         setVisible(true);
     }
 
-    private void changeHello(ActionEvent e) {
+    private void changeHelloClicked(ActionEvent e) {
         helloMessage.setText("Hello, %s!".formatted(name.getText()));
     }
 
@@ -110,7 +110,7 @@ public class MainFrame extends JFrame {
 
             //---- changeHello ----
             changeHello.setText("Hello");
-            changeHello.addActionListener(e -> changeHello(e));
+            changeHello.addActionListener(e -> changeHelloClicked(e));
             panel1.add(changeHello, "cell 1 2");
         }
         contentPane.add(panel1, "cell 0 0");
