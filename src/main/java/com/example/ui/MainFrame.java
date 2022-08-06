@@ -11,6 +11,8 @@ import net.miginfocom.swing.MigLayout;
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
+import java.awt.event.KeyAdapter;
+import java.awt.event.KeyEvent;
 
 /**
  * @author unknown
@@ -38,6 +40,14 @@ public class MainFrame extends JFrame {
     }
 
     private void changeHelloClicked(ActionEvent e) {
+        updateHello();
+    }
+
+    private void nameKeyPressed(KeyEvent e) {
+        if (e.getKeyCode() == KeyEvent.VK_ENTER) updateHello();
+    }
+
+    private void updateHello() {
         helloMessage.setText("Hello, %s!".formatted(name.getText()));
     }
 
@@ -106,6 +116,12 @@ public class MainFrame extends JFrame {
 
             //---- name ----
             name.setText("Developer");
+            name.addKeyListener(new KeyAdapter() {
+                @Override
+                public void keyPressed(KeyEvent e) {
+                    nameKeyPressed(e);
+                }
+            });
             panel1.add(name, "cell 0 2,pushx");
 
             //---- changeHello ----
