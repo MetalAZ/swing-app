@@ -50,7 +50,7 @@ public class ThemeManager {
 
             var clazz = (Class<FlatLaf>) Class.forName(themeInfo.getClassName());
             var instance = clazz.getDeclaredConstructor().newInstance();
-            
+
             FlatLaf.setup(instance);
             FlatLaf.updateUI();
         } catch (NoSuchElementException | NoSuchMethodException | IllegalAccessException | InvocationTargetException |
@@ -64,8 +64,6 @@ public class ThemeManager {
         try {
             JFrame.setDefaultLookAndFeelDecorated(false);
             JDialog.setDefaultLookAndFeelDecorated(false);
-            FlatLaf.updateUI();
-
             UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
             SwingUtilities.updateComponentTreeUI(window);
         } catch (UnsupportedLookAndFeelException | ClassNotFoundException | InstantiationException |
