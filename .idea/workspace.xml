@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0cb700bb-deb0-48e7-b52e-381d10363ecb" name="Changes" comment="" />
+    <list default="true" id="0cb700bb-deb0-48e7-b52e-381d10363ecb" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -55,7 +58,7 @@
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;actions.on.save&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.completion&quot;,
     &quot;typescript.add.unambiguous.imports.on.the.fly&quot;: &quot;true&quot;
   }
 }</component>
@@ -66,7 +69,7 @@
       <recent name="$PROJECT_DIR$/src/main/resources" />
     </key>
   </component>
-  <component name="RunManager" selected="Maven.swing-app [install]">
+  <component name="RunManager" selected="Application.App">
     <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.example.App" />
       <module name="swing-app" />
@@ -157,9 +160,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.App" />
         <item itemvalue="Maven.swing-app [install]" />
         <item itemvalue="Maven.swing-app [clean]" />
-        <item itemvalue="Application.App" />
         <item itemvalue="Maven.swing-app [package]" />
       </list>
     </recent_temporary>
@@ -176,6 +179,9 @@
       <workItem from="1659801264751" duration="1607000" />
       <workItem from="1659805758027" duration="1725000" />
       <workItem from="1659960022172" duration="9417000" />
+      <workItem from="1659979982028" duration="276000" />
+      <workItem from="1659982484209" duration="172000" />
+      <workItem from="1659983493060" duration="721000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1659795804032</created>
@@ -331,7 +337,14 @@
       <option name="project" value="LOCAL" />
       <updated>1659968056011</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="Corrected filename">
+      <created>1659980039755</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1659980039755</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -362,6 +375,7 @@
     <MESSAGE value="Added Linux screenshots" />
     <MESSAGE value="Small refactor" />
     <MESSAGE value="Updated macOS icns file from png" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated macOS icns file from png" />
+    <MESSAGE value="Corrected filename" />
+    <option name="LAST_COMMIT_MESSAGE" value="Corrected filename" />
   </component>
 </project>

@@ -50,6 +50,16 @@ mvn clean
 mvn install
 ```
 
+### Known Build Issues w/ Ubuntu
+
+- If you build the installer on Ubuntu 20.04 the app can be installed on Ubuntu 20.04+, but if you build the app on
+  Ubuntu
+  22.04 the app will require Ubuntu 22.04+.
+
+- If you run an app built on Ubuntu 20.04 on Ubuntu 22.04 the app will core dump upon exit. That's the only issue I've
+  noticed but it does open Ubuntu's crash reporter so a big deal. One option is to have two Ubuntu-based installers, one
+  for 20.04/20.10 and the other for 22.04+.
+
 ### Example/Demo
 
 Just clone this repo and run the main method. You can also create an installation package and install it. That'll give
