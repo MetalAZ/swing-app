@@ -6,13 +6,13 @@ new FormModel {
 		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class net.miginfocom.swing.MigLayout ) {
 			"$layoutConstraints": "fillx,hidemode 3"
 			"$columnConstraints": "[fill]"
-			"$rowConstraints": "[]"
+			"$rowConstraints": "[][][]"
 		} ) {
 			name: "this"
 			"$sizePolicy": 1
 			"defaultCloseOperation": 3
 			"iconImage": new com.jformdesigner.model.SwingIcon( 0, "/icons/form-icon.png" )
-			"minimumSize": new java.awt.Dimension( 300, 200 )
+			"minimumSize": new java.awt.Dimension( 625, 430 )
 			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class net.miginfocom.swing.MigLayout ) {
 				"$layoutConstraints": "fill,hidemode 3"
 				"$columnConstraints": "[fill][fill]"
@@ -43,6 +43,7 @@ new FormModel {
 				add( new FormComponent( "javax.swing.JButton" ) {
 					name: "changeHello"
 					"text": "Hello"
+					"focusPainted": false
 					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "changeHelloClicked", true ) )
 				}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
 					"value": "cell 1 2"
@@ -50,9 +51,107 @@ new FormModel {
 			}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
 				"value": "cell 0 0"
 			} )
+			add( new FormComponent( "com.jformdesigner.designer.wrapper.VSpacer" ) {
+				name: "vSpacer2"
+				"preferredSize": new java.awt.Dimension( 10, 15 )
+			}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+				"value": "cell 0 1"
+			} )
+			add( new FormContainer( "javax.swing.JTabbedPane", new FormLayoutManager( class javax.swing.JTabbedPane ) ) {
+				name: "tabbedPane1"
+				add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+					name: "scrollPane1"
+					"border": new javax.swing.border.EmptyBorder( 0, 0, 0, 0 )
+					add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class net.miginfocom.swing.MigLayout ) {
+						"$layoutConstraints": "fillx,hidemode 3,gap 8 8"
+						"$columnConstraints": "[fill][fill]"
+						"$rowConstraints": "[][][][][][]"
+					} ) {
+						name: "panel2"
+						add( new FormComponent( "com.jformdesigner.designer.wrapper.VSpacer" ) {
+							name: "vSpacer3"
+						}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+							"value": "cell 1 0"
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "check1"
+							"text": "text"
+						}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+							"value": "cell 0 1"
+						} )
+						add( new FormComponent( "javax.swing.JTextArea" ) {
+							name: "textArea2"
+							"text": "Themeing via FlatLaf to provide a more modern look and feel. There are many themes available and a theme designer for making new ones."
+							"wrapStyleWord": true
+							"lineWrap": true
+							"opaque": false
+							"editable": false
+							"border": sfield com.jformdesigner.model.FormObject NULL_VALUE
+						}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+							"value": "cell 1 1,pushx,grow,width 10:200"
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "check2"
+							"text": "text"
+						}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+							"value": "cell 0 2"
+						} )
+						add( new FormComponent( "javax.swing.JTextArea" ) {
+							name: "textArea1"
+							"text": "Proguard obfuscation to uglify your code to help deter people from taking it and re-using it without your permission."
+							"lineWrap": true
+							"editable": false
+							"border": sfield com.jformdesigner.model.FormObject NULL_VALUE
+							"wrapStyleWord": true
+							"focusable": false
+							"opaque": false
+						}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+							"value": "cell 1 2,grow,width 10:200"
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "check3"
+							"text": "text"
+						}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+							"value": "cell 0 3"
+						} )
+						add( new FormComponent( "javax.swing.JTextArea" ) {
+							name: "textArea3"
+							"text": "Packaging for installing your application on other computers. This includes everything required to run your application and is optimized for size."
+							"wrapStyleWord": true
+							"lineWrap": true
+							"editable": false
+							"opaque": false
+							"border": sfield com.jformdesigner.model.FormObject NULL_VALUE
+						}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+							"value": "cell 1 3,grow,width 10:200"
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "check4"
+							"text": "text"
+						}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+							"value": "cell 0 4"
+						} )
+						add( new FormComponent( "javax.swing.JTextArea" ) {
+							name: "textArea4"
+							"lineWrap": true
+							"editable": false
+							"wrapStyleWord": true
+							"opaque": false
+							"border": sfield com.jformdesigner.model.FormObject NULL_VALUE
+							"text": "No JRE required. You don't need to worry if a computer has the Java Runtime installed. Your installer includes just the parts of the runtime that it needs to run."
+						}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+							"value": "cell 1 4,grow,width 10:200"
+						} )
+					} )
+				}, new FormLayoutConstraints( null ) {
+					"title": "Features"
+				} )
+			}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+				"value": "cell 0 2"
+			} )
 		}, new FormLayoutConstraints( null ) {
 			"location": new java.awt.Point( 0, 0 )
-			"size": new java.awt.Dimension( 595, 425 )
+			"size": new java.awt.Dimension( 625, 430 )
 		} )
 		add( new FormContainer( "javax.swing.JMenuBar", new FormLayoutManager( class javax.swing.JMenuBar ) ) {
 			name: "appMenu"

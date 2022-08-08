@@ -65,6 +65,11 @@
             <version>2.4</version>
         </dependency>
         <dependency>
+            <groupId>com.formdev</groupId>
+            <artifactId>flatlaf-extras</artifactId>
+            <version>2.4</version>
+        </dependency>
+        <dependency>
             <groupId>com.github.akman</groupId>
             <artifactId>jpackage-maven-plugin</artifactId>
             <version>0.1.5</version>
