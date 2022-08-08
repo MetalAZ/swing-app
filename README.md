@@ -55,7 +55,12 @@ mvn install
 Just clone this repo and run the main method. You can also create an installation package and install it. That'll give
 you best idea of how everything works and what it's like from an end-user perspective.
 
-### Screenshots & Theming
+### Screenshots
+
+![Light](screenshots/linux-light.png "Light Theme")
+![Dark](screenshots/linux-dark.png "Dark Theme")
+
+### More Screenshots & Theming
 
 [FlatLaf](https://github.com/JFormDesigner/FlatLaf) provides screenshots of some of the themes. You can also download
 their latest demo .jar that includes all the available themes, so you get an idea what your app can look like. You can
