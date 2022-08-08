@@ -34,7 +34,7 @@ new FormModel {
 					add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class net.miginfocom.swing.MigLayout ) {
 						"$layoutConstraints": "fillx,insets 0,hidemode 3"
 						"$columnConstraints": "[fill]"
-						"$rowConstraints": "[][][]"
+						"$rowConstraints": "[][][][]"
 					} ) {
 						name: "panel1"
 						add( new FormComponent( "javax.swing.JLabel" ) {
@@ -50,44 +50,38 @@ new FormModel {
 						}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
 							"value": "cell 0 1"
 						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "javaRuntime"
+							"text": "Java runtime ..."
+						}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+							"value": "cell 0 2,pushx"
+						} )
 					}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
 						"value": "cell 2 0"
-					} )
-					add( new FormComponent( "javax.swing.JLabel" ) {
-						name: "javaRuntime"
-						"text": "Java runtime ..."
-					}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
-						"value": "cell 2 2,pushx"
-					} )
-					add( new FormComponent( "com.jformdesigner.designer.wrapper.VSpacer" ) {
-						name: "vSpacer1"
-						"minimumSize": new java.awt.Dimension( 20, 15 )
-					}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
-						"value": "cell 2 3"
 					} )
 					add( new FormComponent( "javax.swing.JLabel" ) {
 						name: "appIconBy"
 						"text": "App icon by..."
 					}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
-						"value": "cell 2 4"
+						"value": "cell 2 1,pushx,growx"
 					} )
 					add( new FormComponent( "com.jformdesigner.designer.wrapper.VSpacer" ) {
 						name: "vSpacer2"
-						"minimumSize": new java.awt.Dimension( 20, 15 )
+						"minimumSize": new java.awt.Dimension( 10, 10 )
 					}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
-						"value": "cell 2 5"
+						"value": "cell 2 2"
 					} )
 					add( new FormComponent( "javax.swing.JLabel" ) {
 						name: "websiteLink"
 						"text": "http://..."
 					}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
-						"value": "cell 2 6"
+						"value": "cell 2 3"
 					} )
 					add( new FormComponent( "javax.swing.JLabel" ) {
 						name: "copyright"
 						"text": "Copyright..."
 					}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
-						"value": "cell 2 7"
+						"value": "cell 2 4"
 					} )
 				}, new FormLayoutConstraints( class java.lang.String ) {
 					"value": "Center"
@@ -113,7 +107,7 @@ new FormModel {
 			} )
 		}, new FormLayoutConstraints( null ) {
 			"location": new java.awt.Point( 0, 0 )
-			"size": new java.awt.Dimension( 410, 300 )
+			"size": new java.awt.Dimension( 380, 255 )
 		} )
 	}
 }
