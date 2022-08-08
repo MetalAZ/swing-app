@@ -118,25 +118,25 @@ public class MainFrame extends JFrame {
         setMinimumSize(new Dimension(625, 430));
         var contentPane = getContentPane();
         contentPane.setLayout(new MigLayout(
-                "fillx,hidemode 3",
-                // columns
-                "[fill]",
-                // rows
-                "[]" +
-                        "[]" +
-                        "[]"));
+            "fillx,hidemode 3",
+            // columns
+            "[fill]",
+            // rows
+            "[]" +
+            "[]" +
+            "[]"));
 
         //======== panel1 ========
         {
             panel1.setLayout(new MigLayout(
-                    "fill,hidemode 3",
-                    // columns
-                    "[fill]" +
-                            "[fill]",
-                    // rows
-                    "[]" +
-                            "[]" +
-                            "[]"));
+                "fill,hidemode 3",
+                // columns
+                "[fill]" +
+                "[fill]",
+                // rows
+                "[]" +
+                "[]" +
+                "[]"));
 
             //---- vSpacer1 ----
             vSpacer1.setMinimumSize(new Dimension(12, 20));
@@ -180,17 +180,17 @@ public class MainFrame extends JFrame {
                 //======== panel2 ========
                 {
                     panel2.setLayout(new MigLayout(
-                            "fillx,hidemode 3,gap 8 8",
-                            // columns
-                            "[fill]" +
-                                    "[fill]",
-                            // rows
-                            "[]" +
-                                    "[]" +
-                                    "[]" +
-                                    "[]" +
-                                    "[]" +
-                                    "[]"));
+                        "fillx,hidemode 3,gap 8 8",
+                        // columns
+                        "[fill]" +
+                        "[fill]",
+                        // rows
+                        "[]" +
+                        "[]" +
+                        "[]" +
+                        "[]" +
+                        "[]" +
+                        "[]"));
                     panel2.add(vSpacer3, "cell 1 0");
 
                     //---- check1 ----
@@ -198,7 +198,7 @@ public class MainFrame extends JFrame {
                     panel2.add(check1, "cell 0 1");
 
                     //---- textArea2 ----
-                    textArea2.setText("Themeing via FlatLaf to provide a more modern look and feel. There are many themes available and a theme designer for making new ones.");
+                    textArea2.setText("Theming via FlatLaf to provide a more modern look and feel. There are many themes available and a theme designer for making new ones.");
                     textArea2.setWrapStyleWord(true);
                     textArea2.setLineWrap(true);
                     textArea2.setOpaque(false);

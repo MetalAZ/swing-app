@@ -81,7 +81,7 @@ new FormModel {
 						} )
 						add( new FormComponent( "javax.swing.JTextArea" ) {
 							name: "textArea2"
-							"text": "Themeing via FlatLaf to provide a more modern look and feel. There are many themes available and a theme designer for making new ones."
+							"text": "Theming via FlatLaf to provide a more modern look and feel. There are many themes available and a theme designer for making new ones."
 							"wrapStyleWord": true
 							"lineWrap": true
 							"opaque": false
