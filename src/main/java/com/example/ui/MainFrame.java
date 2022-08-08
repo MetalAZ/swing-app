@@ -118,7 +118,7 @@ public class MainFrame extends JFrame {
         //======== this ========
         setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
         setIconImage(new ImageIcon(getClass().getResource("/icons/form-icon.png")).getImage());
-        setMinimumSize(new Dimension(625, 430));
+        setMinimumSize(new Dimension(650, 470));
         setTitle("App");
         var contentPane = getContentPane();
         contentPane.setLayout(new MigLayout(

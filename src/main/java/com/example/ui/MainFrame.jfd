@@ -11,7 +11,7 @@ new FormModel {
 			name: "this"
 			"defaultCloseOperation": 3
 			"iconImage": new com.jformdesigner.model.SwingIcon( 0, "/icons/form-icon.png" )
-			"minimumSize": new java.awt.Dimension( 625, 430 )
+			"minimumSize": new java.awt.Dimension( 650, 470 )
 			"title": "App"
 			"$locationPolicy": 1
 			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class net.miginfocom.swing.MigLayout ) {

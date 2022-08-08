@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0cb700bb-deb0-48e7-b52e-381d10363ecb" name="Changes" comment="Added known build issues part">
+    <list default="true" id="0cb700bb-deb0-48e7-b52e-381d10363ecb" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/ui/AboutFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/ui/AboutFrame.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/ui/MainFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/ui/MainFrame.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/ui/MainFrame.jfd" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/ui/MainFrame.jfd" afterDir="false" />
     </list>
@@ -184,7 +183,7 @@
       <workItem from="1659979982028" duration="276000" />
       <workItem from="1659982484209" duration="172000" />
       <workItem from="1659983493060" duration="1930000" />
-      <workItem from="1659997964075" duration="2957000" />
+      <workItem from="1659997964075" duration="3548000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1659795804032</created>
@@ -354,7 +353,14 @@
       <option name="project" value="LOCAL" />
       <updated>1659984270584</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="Fixed display issues with larger font sizes">
+      <created>1660001082514</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1660001082514</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -387,6 +393,7 @@
     <MESSAGE value="Updated macOS icns file from png" />
     <MESSAGE value="Corrected filename" />
     <MESSAGE value="Added known build issues part" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added known build issues part" />
+    <MESSAGE value="Fixed display issues with larger font sizes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed display issues with larger font sizes" />
   </component>
 </project>
