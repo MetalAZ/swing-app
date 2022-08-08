@@ -5,10 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0cb700bb-deb0-48e7-b52e-381d10363ecb" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/screenshots/linux-dark.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/screenshots/linux-light.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/theme/ThemeManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/theme/ThemeManager.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -180,7 +177,7 @@
       <workItem from="1659786338395" duration="14135000" />
       <workItem from="1659801264751" duration="1607000" />
       <workItem from="1659805758027" duration="1725000" />
-      <workItem from="1659960022172" duration="6178000" />
+      <workItem from="1659960022172" duration="6345000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1659795804032</created>
@@ -315,7 +312,14 @@
       <option name="project" value="LOCAL" />
       <updated>1659965496208</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="Added Linux screenshots">
+      <created>1659966276251</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1659966276251</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -343,6 +347,7 @@
     <MESSAGE value="Added feature list" />
     <MESSAGE value="Reverted default light theme back" />
     <MESSAGE value="Fixed spelling" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed spelling" />
+    <MESSAGE value="Added Linux screenshots" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added Linux screenshots" />
   </component>
 </project>

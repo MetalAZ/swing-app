@@ -20,7 +20,7 @@ public class ThemeManager {
     @Getter
     private boolean isDark;
     private final Component window;
-    private List<FlatAllIJThemes.FlatIJLookAndFeelInfo> themes;
+    private final List<FlatAllIJThemes.FlatIJLookAndFeelInfo> themes = new ArrayList<>();
 
     public ThemeManager(Component window) {
         this.window = window;
@@ -34,7 +34,6 @@ public class ThemeManager {
     }
 
     private void extendThemeList() {
-        themes = new ArrayList<>();
         themes.addAll(Arrays.asList(FlatAllIJThemes.INFOS));
         themes.add(new FlatAllIJThemes.FlatIJLookAndFeelInfo("FlatLaf IntelliJ", "com.formdev.flatlaf.FlatIntelliJLaf", false));
     }
