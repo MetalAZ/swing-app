@@ -27,6 +27,8 @@ public class AboutFrame extends JDialog {
 
         initComponents();
         initData();
+
+        pack();
         setVisible(true);
     }
 

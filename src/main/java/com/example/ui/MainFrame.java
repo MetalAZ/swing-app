@@ -37,6 +37,8 @@ public class MainFrame extends JFrame {
         setIcons();
         setJMenuBar(appMenu);
         setTitle(AppConfig.APP_NAME);
+        pack();
+
         setLocationRelativeTo(null); // Centers Window
         setVisible(true);
     }
@@ -93,9 +95,10 @@ public class MainFrame extends JFrame {
         name = new JTextField();
         changeHello = new JButton();
         vSpacer2 = new JPanel(null);
+        panel2 = new JPanel();
         tabbedPane1 = new JTabbedPane();
         scrollPane1 = new JScrollPane();
-        panel2 = new JPanel();
+        panel3 = new JPanel();
         vSpacer3 = new JPanel(null);
         check1 = new JLabel();
         textArea2 = new JTextArea();
@@ -116,27 +119,28 @@ public class MainFrame extends JFrame {
         setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
         setIconImage(new ImageIcon(getClass().getResource("/icons/form-icon.png")).getImage());
         setMinimumSize(new Dimension(625, 430));
+        setTitle("App");
         var contentPane = getContentPane();
         contentPane.setLayout(new MigLayout(
-            "fillx,hidemode 3",
-            // columns
-            "[fill]",
-            // rows
-            "[]" +
-            "[]" +
-            "[]"));
+                "fillx,hidemode 3",
+                // columns
+                "[fill]",
+                // rows
+                "[]" +
+                        "[]" +
+                        "[]"));
 
         //======== panel1 ========
         {
             panel1.setLayout(new MigLayout(
-                "fill,hidemode 3",
-                // columns
-                "[fill]" +
-                "[fill]",
-                // rows
-                "[]" +
-                "[]" +
-                "[]"));
+                    "fillx,hidemode 3",
+                    // columns
+                    "[fill]" +
+                            "[fill]",
+                    // rows
+                    "[]" +
+                            "[]" +
+                            "[]"));
 
             //---- vSpacer1 ----
             vSpacer1.setMinimumSize(new Dimension(12, 20));
@@ -170,89 +174,100 @@ public class MainFrame extends JFrame {
         vSpacer2.setPreferredSize(new Dimension(10, 15));
         contentPane.add(vSpacer2, "cell 0 1");
 
-        //======== tabbedPane1 ========
+        //======== panel2 ========
         {
+            panel2.setLayout(new MigLayout(
+                    "fillx,hidemode 3",
+                    // columns
+                    "[fill]",
+                    // rows
+                    "[]"));
 
-            //======== scrollPane1 ========
+            //======== tabbedPane1 ========
             {
-                scrollPane1.setBorder(BorderFactory.createEmptyBorder());
 
-                //======== panel2 ========
+                //======== scrollPane1 ========
                 {
-                    panel2.setLayout(new MigLayout(
-                        "fillx,hidemode 3,gap 8 8",
-                        // columns
-                        "[fill]" +
-                        "[fill]",
-                        // rows
-                        "[]" +
-                        "[]" +
-                        "[]" +
-                        "[]" +
-                        "[]" +
-                        "[]"));
-                    panel2.add(vSpacer3, "cell 1 0");
+                    scrollPane1.setBorder(BorderFactory.createEmptyBorder());
 
-                    //---- check1 ----
-                    check1.setText("text");
-                    panel2.add(check1, "cell 0 1");
+                    //======== panel3 ========
+                    {
+                        panel3.setLayout(new MigLayout(
+                                "fillx,hidemode 3,gap 8 8",
+                                // columns
+                                "[fill]" +
+                                        "[fill]",
+                                // rows
+                                "[]" +
+                                        "[]" +
+                                        "[]" +
+                                        "[]" +
+                                        "[]" +
+                                        "[]"));
+                        panel3.add(vSpacer3, "cell 1 0");
 
-                    //---- textArea2 ----
-                    textArea2.setText("Theming via FlatLaf to provide a more modern look and feel. There are many themes available and a theme designer for making new ones.");
-                    textArea2.setWrapStyleWord(true);
-                    textArea2.setLineWrap(true);
-                    textArea2.setOpaque(false);
-                    textArea2.setEditable(false);
-                    textArea2.setBorder(null);
-                    panel2.add(textArea2, "cell 1 1,pushx,grow,width 10:200");
+                        //---- check1 ----
+                        check1.setText("text");
+                        panel3.add(check1, "cell 0 1");
 
-                    //---- check2 ----
-                    check2.setText("text");
-                    panel2.add(check2, "cell 0 2");
+                        //---- textArea2 ----
+                        textArea2.setText("Theming via FlatLaf to provide a more modern look and feel. There are many themes available and a theme designer for making new ones.");
+                        textArea2.setWrapStyleWord(true);
+                        textArea2.setOpaque(false);
+                        textArea2.setEditable(false);
+                        textArea2.setBorder(null);
+                        textArea2.setLineWrap(true);
+                        panel3.add(textArea2, "cell 1 1,pushx,growx,width 10:200");
 
-                    //---- textArea1 ----
-                    textArea1.setText("Proguard obfuscation to uglify your code to help deter people from taking it and re-using it without your permission.");
-                    textArea1.setLineWrap(true);
-                    textArea1.setEditable(false);
-                    textArea1.setBorder(null);
-                    textArea1.setWrapStyleWord(true);
-                    textArea1.setFocusable(false);
-                    textArea1.setOpaque(false);
-                    panel2.add(textArea1, "cell 1 2,grow,width 10:200");
+                        //---- check2 ----
+                        check2.setText("text");
+                        panel3.add(check2, "cell 0 2");
 
-                    //---- check3 ----
-                    check3.setText("text");
-                    panel2.add(check3, "cell 0 3");
+                        //---- textArea1 ----
+                        textArea1.setText("Proguard obfuscation to uglify your code to help deter people from taking it and re-using it without your permission.");
+                        textArea1.setEditable(false);
+                        textArea1.setBorder(null);
+                        textArea1.setWrapStyleWord(true);
+                        textArea1.setFocusable(false);
+                        textArea1.setOpaque(false);
+                        textArea1.setLineWrap(true);
+                        panel3.add(textArea1, "cell 1 2,growx,width 10:200");
 
-                    //---- textArea3 ----
-                    textArea3.setText("Packaging for installing your application on other computers. This includes everything required to run your application and is optimized for size.");
-                    textArea3.setWrapStyleWord(true);
-                    textArea3.setLineWrap(true);
-                    textArea3.setEditable(false);
-                    textArea3.setOpaque(false);
-                    textArea3.setBorder(null);
-                    panel2.add(textArea3, "cell 1 3,grow,width 10:200");
+                        //---- check3 ----
+                        check3.setText("text");
+                        panel3.add(check3, "cell 0 3");
 
-                    //---- check4 ----
-                    check4.setText("text");
-                    panel2.add(check4, "cell 0 4");
+                        //---- textArea3 ----
+                        textArea3.setText("Packaging for installing your application on other computers. This includes everything required to run your application and is optimized for size.");
+                        textArea3.setWrapStyleWord(true);
+                        textArea3.setEditable(false);
+                        textArea3.setOpaque(false);
+                        textArea3.setBorder(null);
+                        textArea3.setLineWrap(true);
+                        panel3.add(textArea3, "cell 1 3,growx,width 10:200");
 
-                    //---- textArea4 ----
-                    textArea4.setLineWrap(true);
-                    textArea4.setEditable(false);
-                    textArea4.setWrapStyleWord(true);
-                    textArea4.setOpaque(false);
-                    textArea4.setBorder(null);
-                    textArea4.setText("No JRE required. You don't need to worry if a computer has the Java Runtime installed. Your installer includes just the parts of the runtime that it needs to run.");
-                    panel2.add(textArea4, "cell 1 4,grow,width 10:200");
+                        //---- check4 ----
+                        check4.setText("text");
+                        panel3.add(check4, "cell 0 4");
+
+                        //---- textArea4 ----
+                        textArea4.setEditable(false);
+                        textArea4.setWrapStyleWord(true);
+                        textArea4.setOpaque(false);
+                        textArea4.setBorder(null);
+                        textArea4.setText("No JRE required. You don't need to worry if a computer has the Java Runtime installed. Your installer includes just the parts of the runtime that it needs to run.");
+                        textArea4.setLineWrap(true);
+                        panel3.add(textArea4, "cell 1 4,growx,width 10:200");
+                    }
+                    scrollPane1.setViewportView(panel3);
                 }
-                scrollPane1.setViewportView(panel2);
+                tabbedPane1.addTab("Features", scrollPane1);
             }
-            tabbedPane1.addTab("Features", scrollPane1);
+            panel2.add(tabbedPane1, "cell 0 0,aligny top,growy 0");
         }
-        contentPane.add(tabbedPane1, "cell 0 2");
-        setSize(625, 430);
-        setLocationRelativeTo(getOwner());
+        contentPane.add(panel2, "cell 0 2");
+        pack();
+        setLocationRelativeTo(null);
 
         //======== appMenu ========
         {
@@ -296,9 +311,10 @@ public class MainFrame extends JFrame {
     private JTextField name;
     private JButton changeHello;
     private JPanel vSpacer2;
+    private JPanel panel2;
     private JTabbedPane tabbedPane1;
     private JScrollPane scrollPane1;
-    private JPanel panel2;
+    private JPanel panel3;
     private JPanel vSpacer3;
     private JLabel check1;
     private JTextArea textArea2;
