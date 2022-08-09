@@ -394,8 +394,7 @@
                     <family>unix</family>
                 </os>
                 <property>
-                    <name>appimage</name>
-                    <value>!true</value>
+                    <name>!appimage</name>
                 </property>
             </activation>
             <properties>
@@ -403,15 +402,27 @@
             </properties>
         </profile>
         <profile>
-            <id>appimage-active</id>
+            <id>app-image-linux-active</id>
             <activation>
                 <property>
                     <name>appimage</name>
-                    <value>true</value>
+                    <value>linux</value>
                 </property>
             </activation>
             <properties>
-                <platform>appimage</platform>
+                <platform>appimage-linux</platform>
+            </properties>
+        </profile>
+        <profile>
+            <id>app-image-window-active</id>
+            <activation>
+                <property>
+                    <name>appimage</name>
+                    <value>win</value>
+                </property>
+            </activation>
+            <properties>
+                <platform>appimage-win</platform>
             </properties>
         </profile>
         <profile>
@@ -421,8 +432,7 @@
                     <family>windows</family>
                 </os>
                 <property>
-                    <name>appimage</name>
-                    <value>!true</value>
+                    <name>!appimage</name>
                 </property>
             </activation>
             <properties>
@@ -465,12 +475,23 @@
                     <family>mac</family>
                 </os>
                 <property>
-                    <name>appimage</name>
-                    <value>!true</value>
+                    <name>!appimage</name>
                 </property>
             </activation>
             <properties>
                 <platform>mac</platform>
+            </properties>
+        </profile>
+        <profile>
+            <id>app-image-mac-active</id>
+            <activation>
+                <property>
+                    <name>appimage</name>
+                    <value>mac</value>
+                </property>
+            </activation>
+            <properties>
+                <platform>appimage-mac</platform>
             </properties>
         </profile>
     </profiles>

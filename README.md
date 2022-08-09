@@ -54,17 +54,31 @@ The installation file can be found in the *target* folder after.
 
 ### Build No Installer
 
-You can generate a build that can be copied to other computers without the need to install it.
+You can generate a build that can be copied to other computers without the need to install it. You must run the command
+on the platform you're targeting.
+
+**Windows**
 
 ```shell
 mvn clean
-mvn install -Dappimage=true
+mvn install -Dappimage=win
+```
+
+**Linux**
+
+```shell
+mvn clean
+mvn install -Dappimage=linux
+```
+
+**macOS**
+
+```shell
+mvn clean
+mvn install -Dappimage=mac
 ```
 
 The files can be found in the app name subfolder of the *target* folder after, such as *target/Swing App*.
-
-[appimage-jpackage.txt](src/packaging/appimage-jpackage.txt) is the configuration file. On Windows the icon is expected
-to be the .ico icon file. You may need to modify the icon value when building for Windows vs Linux and macOS.
 
 ### Known Build Issues w/ Ubuntu
 
