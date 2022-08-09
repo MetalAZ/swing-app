@@ -29,7 +29,7 @@
         <!-- Change your app's name to something interesting... but you might want to avoid spaces
         just to safe for compatibility across operating systems. -->
         <app.name>Swing App</app.name>
-        
+
         <app.description>Java Swing Example App</app.description>
 
         <!-- Defines the menu category to list the app under. Separate multiple with a semicolon.
@@ -405,9 +405,6 @@
         <profile>
             <id>appimage-active</id>
             <activation>
-                <os>
-                    <family>unix</family>
-                </os>
                 <property>
                     <name>appimage</name>
                     <value>true</value>
