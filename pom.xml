@@ -384,9 +384,28 @@
                 <os>
                     <family>unix</family>
                 </os>
+                <property>
+                    <name>appimage</name>
+                    <value>!true</value>
+                </property>
             </activation>
             <properties>
                 <platform>linux</platform>
+            </properties>
+        </profile>
+        <profile>
+            <id>appimage-active</id>
+            <activation>
+                <os>
+                    <family>unix</family>
+                </os>
+                <property>
+                    <name>appimage</name>
+                    <value>true</value>
+                </property>
+            </activation>
+            <properties>
+                <platform>appimage</platform>
             </properties>
         </profile>
         <profile>

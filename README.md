@@ -50,6 +50,22 @@ mvn clean
 mvn install
 ```
 
+The installation file can be found in the *target* folder after.
+
+### Build AppImage
+
+On Linux, you can generate the files for packaging your application as an [AppImage](https://appimage.org/). It doesn't
+yet do the final packaging to AppImage though.
+
+```shell
+mvn clean
+mvn install -Dappimage=true
+```
+
+The files can be found in the app name subfolder of the *target* folder after, such as *target/Swing App*.
+
+The directory can be sent to other Linux users and the app will just run without installing.
+
 ### Known Build Issues w/ Ubuntu
 
 - If you build the installer on Ubuntu 20.04 the app can be installed on Ubuntu 20.04+, but if you build the app on
