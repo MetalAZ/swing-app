@@ -52,10 +52,9 @@ mvn install
 
 The installation file can be found in the *target* folder after.
 
-### Build AppImage
+### Build No Installer
 
-On Linux, you can generate the files for packaging your application as an [AppImage](https://appimage.org/). It doesn't
-yet do the final packaging to AppImage though.
+You can generate a build that can be copied to other computers without the need to install it.
 
 ```shell
 mvn clean
@@ -64,7 +63,8 @@ mvn install -Dappimage=true
 
 The files can be found in the app name subfolder of the *target* folder after, such as *target/Swing App*.
 
-The directory can be sent to other Linux users and the app will just run without installing.
+[appimage-jpackage.txt](src/packaging/appimage-jpackage.txt) is the configuration file. On Windows the icon is expected
+to be the .ico icon file. You may need to modify the icon value when building for Windows vs Linux and macOS.
 
 ### Known Build Issues w/ Ubuntu
 

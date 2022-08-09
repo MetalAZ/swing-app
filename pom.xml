@@ -420,6 +420,10 @@
                 <os>
                     <family>windows</family>
                 </os>
+                <property>
+                    <name>appimage</name>
+                    <value>!true</value>
+                </property>
             </activation>
             <properties>
                 <platform>win</platform>
@@ -460,6 +464,10 @@
                 <os>
                     <family>mac</family>
                 </os>
+                <property>
+                    <name>appimage</name>
+                    <value>!true</value>
+                </property>
             </activation>
             <properties>
                 <platform>mac</platform>

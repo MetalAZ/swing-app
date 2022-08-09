@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0cb700bb-deb0-48e7-b52e-381d10363ecb" name="Changes" comment="">
+    <list default="true" id="0cb700bb-deb0-48e7-b52e-381d10363ecb" name="Changes" comment="Updated docs and allows building native-image on Windows and macOS">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -226,7 +227,8 @@
       <workItem from="1659983493060" duration="1930000" />
       <workItem from="1659997964075" duration="3892000" />
       <workItem from="1660002609940" duration="10678000" />
-      <workItem from="1660057824442" duration="1104000" />
+      <workItem from="1660057824442" duration="1197000" />
+      <workItem from="1660060093256" duration="368000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1659795804032</created>
@@ -424,7 +426,14 @@
       <option name="project" value="LOCAL" />
       <updated>1660056864774</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="Removes linux requirement">
+      <created>1660059129311</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1660059129311</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -434,7 +443,6 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Updated description" />
     <MESSAGE value="Updated event handler name for consistency" />
     <MESSAGE value="Updated docs" />
     <MESSAGE value="Updated light theme" />
@@ -459,6 +467,7 @@
     <MESSAGE value="More fixes to deal with larger fonts" />
     <MESSAGE value="Added pre-packing for eventual AppImage packaging (not to be confused with jpackage's app-image)." />
     <MESSAGE value="Updated packaging information" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated packaging information" />
+    <MESSAGE value="Removes linux requirement" />
+    <option name="LAST_COMMIT_MESSAGE" value="Removes linux requirement" />
   </component>
 </project>
