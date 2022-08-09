@@ -6,7 +6,7 @@
 
     <groupId>org.example</groupId>
     <artifactId>swing-app</artifactId>
-    <version>1.0.12345</version>
+    <version>1.0.12346</version>
 
     <repositories>
         <repository>
@@ -29,19 +29,28 @@
         <!-- Change your app's name to something interesting... but you might want to avoid spaces
         just to safe for compatibility across operating systems. -->
         <app.name>Swing App</app.name>
+        
+        <app.description>Java Swing Example App</app.description>
 
         <!-- Defines the menu category to list the app under. Separate multiple with a semicolon.
          Example: Utility;TextEditor;Development;IDE; -->
         <app.category>Utility</app.category>
 
-        <app.version>${version}</app.version>
+        <app.version>${project.version}</app.version>
+
+        <!-- Email address of the app maintainer -->
+        <app.maintainer>someone@example.com</app.maintainer>
+
+        <!-- Copyright line -->
+        <app.copyright>© 2022 ${app.vendor}</app.copyright>
+
+        <!-- The company or person who created this app -->
+        <app.vendor>SomeCompany</app.vendor>
 
         <!-- Replace this UUID with a custom one for your project. This ID is used by the Windows installer system
        to know that an installer is intended to replace/upgrade an earlier version. The easiest thing to do is
        grab a unique UUID via https://www.uuidgenerator.net -->
         <windows.upgrade.uuid>d5c80fee-157d-11ed-861d-0242ac120002</windows.upgrade.uuid>
-        <!-- This is used to set many user-visible fields in the Windows Installer. See win-jpackage.txt -->
-        <windows.vendor>SomeCompany</windows.vendor>
 
         <!-- Empty properties to skip signing by default. Set with the macos-sign Maven profile -->
         <macos.sign></macos.sign>

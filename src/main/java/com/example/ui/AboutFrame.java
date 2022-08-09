@@ -36,13 +36,14 @@ public class AboutFrame extends JDialog {
         appName.setText(AppConfig.APP_NAME);
         copyright.setText(AppConfig.COPYRIGHT_DETAILS);
         javaRuntime.setText("Java runtime %s".formatted(Runtime.version()));
+        versionInfo.setText("Version %s".formatted(AppUtils.getAppVersion()));
 
         appIconBy.setText("<html><a href=''>%s</a></html>".formatted("App icon by Design Circle - Flaticon"));
         appIconBy.setCursor(new Cursor(Cursor.HAND_CURSOR));
         appIconBy.addMouseListener(new MouseAdapter() {
             @Override
             public void mouseClicked(MouseEvent e) {
-                if (AppUtils.openUrlInBrowser("https://www.flaticon.com/authors/design-circle")) {
+                if (!AppUtils.openUrlInBrowser("https://www.flaticon.com/authors/design-circle")) {
                     JOptionPane.showMessageDialog(owner, "Unable to open URL in browser.", "Open Failed", JOptionPane.ERROR_MESSAGE);
                 }
             }
@@ -53,7 +54,7 @@ public class AboutFrame extends JDialog {
         websiteLink.addMouseListener(new MouseAdapter() {
             @Override
             public void mouseClicked(MouseEvent e) {
-                if (AppUtils.openUrlInBrowser(AppConfig.HOME_URL)) {
+                if (!AppUtils.openUrlInBrowser(AppConfig.HOME_URL)) {
                     JOptionPane.showMessageDialog(owner, "Unable to open URL in browser.", "Open Failed", JOptionPane.ERROR_MESSAGE);
                 }
             }

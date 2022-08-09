@@ -1,4 +1,5 @@
 --name "${app.name}"
+--description "${app.description}"
 --icon ${project.basedir}/src/main/resources/icons/app-icon.png
 --dest ${project.build.directory}
 --main-jar ${project.build.finalName}-pg.jar
@@ -8,3 +9,4 @@
 --runtime-image ${project.build.directory}/jvm-image
 --temp ${project.build.directory}/installer-work
 --type "app-image"
+--copyright "${app.copyright}"

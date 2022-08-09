@@ -13,4 +13,4 @@
 --temp ${project.build.directory}\installer-work
 --win-upgrade-uuid ${windows.upgrade.uuid}
 --description "${app.name}"
---copyright "(C) ${windows.vendor}"
+--copyright "${app.copyright}"

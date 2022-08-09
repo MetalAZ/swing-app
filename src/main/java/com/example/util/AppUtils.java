@@ -11,17 +11,23 @@ import java.net.URISyntaxException;
 
 public class AppUtils {
     private static final Logger LOGGER = LoggerFactory.getLogger(AppUtils.class);
-    
+
+
+    public static String getAppVersion() {
+        var p = AppUtils.class.getPackage();
+        return p.getImplementationVersion() == null ? "<DEV>" : p.getImplementationVersion();
+    }
+
     /**
-     * Return true if open fails.
+     * Return true if successful.
      *
      * @param url Url to open
-     * @return true is fails to open
+     * @return true is successfully opened
      */
     public static boolean openUrlInBrowser(String url) {
-        if (SystemInfo.isLinux) return !openUrlInBrowserUsingXDGOpen(url);
-        if (SystemInfo.isMacOS) return !openUrlInBrowserOnMac(url);
-        if (Desktop.isDesktopSupported()) return !openUrlInBrowserUsingDesktop(url);
+        if (SystemInfo.isLinux) return openUrlInBrowserUsingXDGOpen(url);
+        if (SystemInfo.isMacOS) return openUrlInBrowserOnMac(url);
+        if (Desktop.isDesktopSupported()) return openUrlInBrowserUsingDesktop(url);
 
         LOGGER.error("Failed to open url");
         return true;

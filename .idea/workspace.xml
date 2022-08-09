@@ -4,11 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0cb700bb-deb0-48e7-b52e-381d10363ecb" name="Changes" comment="More fixes to deal with larger fonts">
-      <change afterPath="$PROJECT_DIR$/src/packaging/appimage-jpackage.txt" afterDir="false" />
+    <list default="true" id="0cb700bb-deb0-48e7-b52e-381d10363ecb" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/ui/AboutFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/ui/AboutFrame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/util/AppUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/util/AppUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/packaging/appimage-jpackage.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/packaging/appimage-jpackage.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/packaging/linux-jpackage.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/packaging/linux-jpackage.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/packaging/mac-jpackage.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/packaging/mac-jpackage.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/packaging/win-jpackage.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/packaging/win-jpackage.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,7 +83,7 @@
       <recent name="$PROJECT_DIR$/src/main/resources" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.App">
+  <component name="RunManager" selected="Maven.swing-app [clean]">
     <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.example.App" />
       <module name="swing-app" />
@@ -204,9 +208,9 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.App" />
-        <item itemvalue="Maven.swing-app [install]" />
         <item itemvalue="Maven.swing-app [clean]" />
+        <item itemvalue="Maven.swing-app [install]" />
+        <item itemvalue="Application.App" />
         <item itemvalue="Maven.swing-app [package]" />
       </list>
     </recent_temporary>
@@ -227,7 +231,7 @@
       <workItem from="1659982484209" duration="172000" />
       <workItem from="1659983493060" duration="1930000" />
       <workItem from="1659997964075" duration="3892000" />
-      <workItem from="1660002609940" duration="5534000" />
+      <workItem from="1660002609940" duration="10431000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1659795804032</created>
@@ -411,7 +415,14 @@
       <option name="project" value="LOCAL" />
       <updated>1660001772323</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="Added pre-packing for eventual AppImage packaging (not to be confused with jpackage's app-image).">
+      <created>1660045910587</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1660045910587</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -421,7 +432,6 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Initial commit" />
     <MESSAGE value="Updated ignore" />
     <MESSAGE value="Updated description" />
     <MESSAGE value="Updated event handler name for consistency" />
@@ -446,6 +456,7 @@
     <MESSAGE value="Added known build issues part" />
     <MESSAGE value="Fixed display issues with larger font sizes" />
     <MESSAGE value="More fixes to deal with larger fonts" />
-    <option name="LAST_COMMIT_MESSAGE" value="More fixes to deal with larger fonts" />
+    <MESSAGE value="Added pre-packing for eventual AppImage packaging (not to be confused with jpackage's app-image)." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added pre-packing for eventual AppImage packaging (not to be confused with jpackage's app-image)." />
   </component>
 </project>
