@@ -4,16 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0cb700bb-deb0-48e7-b52e-381d10363ecb" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/theme/custom/Dark.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/theme/custom/Light.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/theme/custom/Dark.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/theme/custom/Light.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/config/AppConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/config/AppConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/theme/ThemeManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/theme/ThemeManager.java" afterDir="false" />
-    </list>
+    <list default="true" id="0cb700bb-deb0-48e7-b52e-381d10363ecb" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -234,7 +225,7 @@
       <workItem from="1660086269768" duration="58000" />
       <workItem from="1660301780478" duration="158000" />
       <workItem from="1660310348013" duration="790000" />
-      <workItem from="1660312006198" duration="483000" />
+      <workItem from="1660312006198" duration="944000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1659795804032</created>
@@ -453,7 +444,14 @@
       <option name="project" value="LOCAL" />
       <updated>1660062506029</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="Updated light/dark themes to use custom ones">
+      <created>1660312519399</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1660312519399</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -463,7 +461,6 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Updated light theme" />
     <MESSAGE value="Misc changes" />
     <MESSAGE value="Fixed package name" />
     <MESSAGE value="Updated for clarification" />
@@ -488,6 +485,7 @@
     <MESSAGE value="Removes linux requirement" />
     <MESSAGE value="Updated docs and allows building native-image on Windows and macOS" />
     <MESSAGE value="Added separate app-image configs based on platform" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added separate app-image configs based on platform" />
+    <MESSAGE value="Updated light/dark themes to use custom ones" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated light/dark themes to use custom ones" />
   </component>
 </project>
