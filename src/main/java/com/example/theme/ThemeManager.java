@@ -1,8 +1,9 @@
 package com.example.theme;
 
 import com.example.config.AppConfig;
+import com.example.theme.custom.Dark;
+import com.example.theme.custom.Light;
 import com.formdev.flatlaf.FlatLaf;
-import com.formdev.flatlaf.intellijthemes.FlatAllIJThemes;
 import com.jthemedetecor.OsThemeDetector;
 import lombok.Getter;
 import org.slf4j.Logger;
@@ -11,8 +12,8 @@ import org.slf4j.LoggerFactory;
 import javax.swing.*;
 import java.awt.*;
 import java.lang.reflect.InvocationTargetException;
-import java.util.List;
-import java.util.*;
+import java.util.Arrays;
+import java.util.NoSuchElementException;
 
 public class ThemeManager {
     private static final Logger LOGGER = LoggerFactory.getLogger(ThemeManager.class);
@@ -20,35 +21,34 @@ public class ThemeManager {
     @Getter
     private boolean isDark;
     private final Component window;
-    private final List<FlatAllIJThemes.FlatIJLookAndFeelInfo> themes = new ArrayList<>();
 
     public ThemeManager(Component window) {
         this.window = window;
 
-        extendThemeList();
+        // Custom themes (in resources folder)
+        // https://www.formdev.com/flatlaf/theme-editor/
+        Light.installLafInfo();
+        Dark.installLafInfo();
 
-        FlatLaf.setGlobalExtraDefaults(Collections.singletonMap("@accentColor", "#00f"));
+        // Install other themes
+        // FlatGitHubDarkContrastIJTheme.installLafInfo();
+
         final OsThemeDetector detector = OsThemeDetector.getDetector();
         var selectedTheme = detector.isDark() ? AppConfig.DEFAULT_DARK_THEME : AppConfig.DEFAULT_LIGHT_THEME;
         setTheme(selectedTheme);
     }
 
-    private void extendThemeList() {
-        themes.addAll(Arrays.asList(FlatAllIJThemes.INFOS));
-        themes.add(new FlatAllIJThemes.FlatIJLookAndFeelInfo("FlatLaf IntelliJ", "com.formdev.flatlaf.FlatIntelliJLaf", false));
-    }
-
     public void setTheme(String theme) {
         try {
-            var themeInfo = themes.stream()
+            var themeInfo = Arrays.stream(UIManager.getInstalledLookAndFeels())
                     .filter(x -> x.getName().equals(theme))
                     .findFirst()
                     .orElseThrow();
 
-            isDark = themeInfo.isDark();
-
             var clazz = (Class<FlatLaf>) Class.forName(themeInfo.getClassName());
             var instance = clazz.getDeclaredConstructor().newInstance();
+
+            isDark = instance.isDark();
 
             FlatLaf.setup(instance);
             FlatLaf.updateUI();

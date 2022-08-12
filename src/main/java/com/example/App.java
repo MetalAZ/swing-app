@@ -2,6 +2,7 @@ package com.example;
 
 import com.example.config.AppConfig;
 import com.example.ui.MainFrame;
+import com.formdev.flatlaf.FlatLaf;
 import com.formdev.flatlaf.util.SystemInfo;
 
 import javax.swing.*;
@@ -35,10 +36,16 @@ public class App {
             JDialog.setDefaultLookAndFeelDecorated(true);
         }
 
+        FlatLaf.registerCustomDefaultsSource("com.example.theme.custom");
+
         final int rounding = 8;
         final int insets = 2;
 
         UIManager.put("CheckBox.icon.style", "filled");
+        UIManager.put("Component.arrowType", "chevron");
+
+        UIManager.put("Component.focusWidth", 1);
+        UIManager.put("Component.innerFocusWidth", 1);
 
         UIManager.put("Button.arc", rounding);
         UIManager.put("Component.arc", rounding);
