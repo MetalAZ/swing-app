@@ -238,6 +238,9 @@
                         <option>-ignorewarnings</option>
                         <option>-keep public class ${main-class} { public static void main(java.lang.String[]); }
                         </option>
+                        <option>
+                            -keep public class com.example.theme.custom.**{ *; }
+                        </option>
                     </options>
                     <injar>dependency/${project.build.finalName}.jar</injar>
                     <outjar>dependency/${project.build.finalName}-pg.jar</outjar>
