@@ -6,7 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="0cb700bb-deb0-48e7-b52e-381d10363ecb" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/util/AppUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/util/AppUtils.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -235,7 +235,8 @@
       <workItem from="1660400905659" duration="9123000" />
       <workItem from="1660421806620" duration="336000" />
       <workItem from="1660423702983" duration="899000" />
-      <workItem from="1660424815258" duration="12000" />
+      <workItem from="1660424815258" duration="104000" />
+      <workItem from="1660425652073" duration="5000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1659795804032</created>
@@ -538,7 +539,14 @@
       <option name="project" value="LOCAL" />
       <updated>1660423775731</updated>
     </task>
-    <option name="localTasksCounter" value="44" />
+    <task id="LOCAL-00044" summary="Small fix">
+      <created>1660424886298</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1660424886298</updated>
+    </task>
+    <option name="localTasksCounter" value="45" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -559,7 +567,6 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Reverted default light theme back" />
     <MESSAGE value="Fixed spelling" />
     <MESSAGE value="Added Linux screenshots" />
     <MESSAGE value="Small refactor" />
@@ -584,6 +591,7 @@
     <MESSAGE value="Fixed theme color property" />
     <MESSAGE value="Bumps the version" />
     <MESSAGE value="Updated window type (displays w/ shadow)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated window type (displays w/ shadow)" />
+    <MESSAGE value="Small fix" />
+    <option name="LAST_COMMIT_MESSAGE" value="Small fix" />
   </component>
 </project>

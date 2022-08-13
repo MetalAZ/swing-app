@@ -30,7 +30,7 @@ public class AppUtils {
         if (Desktop.isDesktopSupported()) return openUrlInBrowserUsingDesktop(url);
 
         LOGGER.error("Failed to open url");
-        return true;
+        return false;
     }
 
     private static boolean openUrlInBrowserOnMac(String url) {
