@@ -105,6 +105,9 @@ you best idea of how everything works and what it's like from an end-user perspe
 ![Light](screenshots/linux-light.png "Light Theme")
 ![Dark](screenshots/linux-dark.png "Dark Theme")
 
+![Light](screenshots/linux-controls-light.png "Controls (Light Theme)")
+![Dark](screenshots/linux-controls-dark.png "Controls (Dark Theme)")
+
 ### More Screenshots & Theming
 
 [FlatLaf](https://github.com/JFormDesigner/FlatLaf) provides screenshots of some of the themes. You can also download
