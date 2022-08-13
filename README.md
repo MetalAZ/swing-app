@@ -1,6 +1,6 @@
 # Swing App Example
 
-This serves to demonstrate how Java Swing is a viable option for creating cross-platform desktop applications in 2022.
+This example application demonstrates how Java Swing is a viable option for cross-platform desktop applications in 2022.
 
 This project brings together several things in order to create a modern looking desktop application that can be
 distributed. Installers it generates includes only the necessary files in order for the application to run on another
@@ -18,6 +18,8 @@ Things may not be implemented as cleanly or optimally as by someone more experie
 ### Notable Libraries Used
 
 - Themes via FlatLaf ([GitHub](https://github.com/JFormDesigner/FlatLaf))
+- Auto light/dark theme detection via
+  jSystemThemeDetector ([GitHub](https://github.com/Dansoftowner/jSystemThemeDetector))
 - Packaging via maven-jpackage-template ([GitHub](https://github.com/wiverson/maven-jpackage-template))
 - Proguard obfuscation
 
@@ -30,13 +32,13 @@ Things may not be implemented as cleanly or optimally as by someone more experie
 ### Build Installer Requirements
 
 The following dependencies are needed in order to build installers for distributing an app to others. To fully
-understand how Java Swing can be used for creating app, I highly recommend creating an installer and installing the
+understand how Java Swing can be used for creating an app, I highly recommend creating an installer and installing the
 application.
 
-- Windows: install [WIX](https://wixtoolset.org/)
+- Windows: install: [WIX](https://wixtoolset.org/)
 - Ubuntu-based distros: run: ```sudo apt-get install build-essential```
 - Fedora: run: ```sudo dnf install fedora-packager fedora-review```
-- macOS: Xcode and ??? (I don't own a mac, maybe all you need is Xcode)
+- macOS: install: Xcode and ??? (I don't own a mac, maybe all you need is Xcode)
 
 ### Build Installer For Distribution
 
@@ -55,8 +57,10 @@ The installation file can be found in the *target* folder after.
 
 ### Build No Installer
 
-You can generate a build that can be copied to other computers without the need to install it. You must run the command
-on the platform you're targeting.
+You can generate a build that can be copied to other computers without the need to install it. This is also useful if
+you want to create a more advanced installer on Windows, such as using [Inno Setup](https://jrsoftware.org/isinfo.php).
+
+You must run the command on the platform you're targeting.
 
 **Windows**
 
