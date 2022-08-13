@@ -45,8 +45,7 @@ public class ControlPanel extends JPanel {
     }
 
     private void updateAccentColor(String color) {
-        FlatLaf.setGlobalExtraDefaults(Collections.singletonMap("@accentColor", color));
-        FlatLaf.setGlobalExtraDefaults(Collections.singletonMap("@accentColor", color));
+        FlatLaf.setGlobalExtraDefaults(Collections.singletonMap("@accentBaseColor", color));
 
         Class<? extends LookAndFeel> lafClass = UIManager.getLookAndFeel().getClass();
 
