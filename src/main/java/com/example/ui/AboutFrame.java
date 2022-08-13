@@ -71,7 +71,6 @@ public class AboutFrame extends JDialog {
         setTitle("About");
         setDefaultCloseOperation(WindowConstants.DISPOSE_ON_CLOSE);
         setResizable(false);
-        setType(Window.Type.UTILITY);
         var contentPane = getContentPane();
         contentPane.setLayout(new BorderLayout());
 

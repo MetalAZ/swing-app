@@ -6,7 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="0cb700bb-deb0-48e7-b52e-381d10363ecb" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/ui/AboutFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/ui/AboutFrame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/ui/AboutFrame.jfd" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/ui/AboutFrame.jfd" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -199,8 +200,8 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.App" />
-        <item itemvalue="Maven.swing-app [clean]" />
         <item itemvalue="Maven.swing-app [install]" />
+        <item itemvalue="Maven.swing-app [clean]" />
         <item itemvalue="Maven.swing-app [package]" />
       </list>
     </recent_temporary>
@@ -233,7 +234,8 @@
       <workItem from="1660398006187" duration="105000" />
       <workItem from="1660398446120" duration="1235000" />
       <workItem from="1660400905659" duration="9123000" />
-      <workItem from="1660421806620" duration="61000" />
+      <workItem from="1660421806620" duration="336000" />
+      <workItem from="1660423702983" duration="18000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1659795804032</created>
@@ -522,7 +524,14 @@
       <option name="project" value="LOCAL" />
       <updated>1660409342060</updated>
     </task>
-    <option name="localTasksCounter" value="42" />
+    <task id="LOCAL-00042" summary="Bumps the version">
+      <created>1660421881426</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1660421881426</updated>
+    </task>
+    <option name="localTasksCounter" value="43" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -543,7 +552,6 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Updated about dialog ui" />
     <MESSAGE value="Added feature list" />
     <MESSAGE value="Reverted default light theme back" />
     <MESSAGE value="Fixed spelling" />
@@ -568,6 +576,7 @@
     <MESSAGE value="Updated focus tab background color" />
     <MESSAGE value="Added additional screenshots" />
     <MESSAGE value="Fixed theme color property" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed theme color property" />
+    <MESSAGE value="Bumps the version" />
+    <option name="LAST_COMMIT_MESSAGE" value="Bumps the version" />
   </component>
 </project>
