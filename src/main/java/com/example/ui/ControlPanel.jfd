@@ -91,6 +91,7 @@ new FormModel {
 						name: "xColorSelectionButton1"
 						"text": "text"
 						"background": new java.awt.Color( 22, 136, 255, 255 )
+						"focusable": false
 						addEvent( new FormEvent( "java.beans.PropertyChangeListener", "propertyChange", "xColorSelectionButton1PropertyChange", true, "background" ) )
 					}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
 						"value": "cell 1 4,alignx left,growx 0"

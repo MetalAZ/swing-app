@@ -139,6 +139,7 @@ public class ControlPanel extends JPanel {
                 //---- xColorSelectionButton1 ----
                 xColorSelectionButton1.setText("text");
                 xColorSelectionButton1.setBackground(new Color(22, 136, 255));
+                xColorSelectionButton1.setFocusable(false);
                 xColorSelectionButton1.addPropertyChangeListener("background", e -> xColorSelectionButton1PropertyChange(e));
                 panel1.add(xColorSelectionButton1, "cell 1 4,alignx left,growx 0");
 
