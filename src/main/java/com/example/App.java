@@ -27,10 +27,7 @@ public class App {
             //   - "NSAppearanceNameDarkAqua": use dark appearance
             // (needs to be set on main thread; setting it on AWT thread does not work)
             System.setProperty("apple.awt.application.appearance", "system");
-        }
-
-        // Linux
-        if (SystemInfo.isLinux) {
+        } else if (SystemInfo.isLinux) {
             // enable custom window decorations
             JFrame.setDefaultLookAndFeelDecorated(true);
             JDialog.setDefaultLookAndFeelDecorated(true);
