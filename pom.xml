@@ -6,7 +6,7 @@
 
     <groupId>org.example</groupId>
     <artifactId>swing-app</artifactId>
-    <version>1.0.12346</version>
+    <version>1.0.12347</version>
 
     <repositories>
         <repository>

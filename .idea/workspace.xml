@@ -6,7 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="0cb700bb-deb0-48e7-b52e-381d10363ecb" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/ui/ControlPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/ui/ControlPanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,21 +47,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/home/greg/Development/Java/swing-app/screenshots",
-    "node.js.detected.package.eslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "editor.preferences.completion",
-    "typescript.add.unambiguous.imports.on.the.fly": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/greg/Development/Java/swing-app/screenshots&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.completion&quot;,
+    &quot;typescript.add.unambiguous.imports.on.the.fly&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/screenshots" />
@@ -232,7 +232,8 @@
       <workItem from="1660316265266" duration="1457000" />
       <workItem from="1660398006187" duration="105000" />
       <workItem from="1660398446120" duration="1235000" />
-      <workItem from="1660400905659" duration="8378000" />
+      <workItem from="1660400905659" duration="9123000" />
+      <workItem from="1660421806620" duration="61000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1659795804032</created>
@@ -514,7 +515,14 @@
       <option name="project" value="LOCAL" />
       <updated>1660409219481</updated>
     </task>
-    <option name="localTasksCounter" value="41" />
+    <task id="LOCAL-00041" summary="Fixed theme color property">
+      <created>1660409342060</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1660409342060</updated>
+    </task>
+    <option name="localTasksCounter" value="42" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -535,7 +543,6 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Updated theming" />
     <MESSAGE value="Updated about dialog ui" />
     <MESSAGE value="Added feature list" />
     <MESSAGE value="Reverted default light theme back" />
@@ -560,6 +567,7 @@
     <MESSAGE value="Added some example controls" />
     <MESSAGE value="Updated focus tab background color" />
     <MESSAGE value="Added additional screenshots" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added additional screenshots" />
+    <MESSAGE value="Fixed theme color property" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed theme color property" />
   </component>
 </project>
