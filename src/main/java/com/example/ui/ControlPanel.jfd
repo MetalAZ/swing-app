@@ -1,0 +1,115 @@
+JFDML JFormDesigner: "7.0.7.0.1134" Java: "17.0.3" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class net.miginfocom.swing.MigLayout ) {
+			"$layoutConstraints": "fillx,hidemode 3"
+			"$columnConstraints": "[fill]"
+			"$rowConstraints": "[]"
+		} ) {
+			name: "this"
+			add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+				name: "scrollPane1"
+				"border": new javax.swing.border.EmptyBorder( 0, 0, 0, 0 )
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class net.miginfocom.swing.MigLayout ) {
+					"$layoutConstraints": "fillx,hidemode 3,gap 10 12"
+					"$columnConstraints": "[fill][fill]"
+					"$rowConstraints": "[][][][][][]"
+				} ) {
+					name: "panel1"
+					"border": new javax.swing.border.EmptyBorder( 0, 0, 0, 0 )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label1"
+						"text": "Example of what some of the controls look like."
+					}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+						"value": "cell 0 0 2 1"
+					} )
+					add( new FormComponent( "javax.swing.JCheckBox" ) {
+						name: "checkBox1"
+						"text": "Option 1"
+						"selected": true
+					}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+						"value": "cell 0 1,alignx left,growx 0"
+					} )
+					add( new FormComponent( "javax.swing.JCheckBox" ) {
+						name: "checkBox2"
+						"text": "Option 2"
+					}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+						"value": "cell 0 1"
+					} )
+					add( new FormComponent( "org.jdesktop.swingx.JXRadioGroup" ) {
+						name: "xRadioGroup1"
+						auxiliary() {
+							"JavaCodeGenerator.typeParameters": "String"
+						}
+					}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+						"value": "cell 1 1"
+					} )
+					add( new FormComponent( "javax.swing.JSpinner" ) {
+						name: "spinner1"
+					}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+						"value": "cell 0 2,alignx left,growx 0"
+					} )
+					add( new FormComponent( "javax.swing.JComboBox" ) {
+						name: "comboBox1"
+						"model": new javax.swing.DefaultComboBoxModel {
+							selectedItem: "Item 1"
+							addElement( "Item 1" )
+							addElement( "Item 2" )
+							addElement( "Item 3" )
+						}
+						auxiliary() {
+							"JavaCodeGenerator.typeParameters": "String"
+						}
+					}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+						"value": "cell 0 2"
+					} )
+					add( new FormComponent( "org.jdesktop.swingx.JXSearchField" ) {
+						name: "xSearchField1"
+					}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+						"value": "cell 1 2"
+					} )
+					add( new FormComponent( "javax.swing.JProgressBar" ) {
+						name: "progressBar1"
+						"value": 50
+					}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+						"value": "cell 0 3"
+					} )
+					add( new FormComponent( "org.jdesktop.swingx.JXDatePicker" ) {
+						name: "xDatePicker1"
+					}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+						"value": "cell 1 3"
+					} )
+					add( new FormComponent( "javax.swing.JSlider" ) {
+						name: "slider1"
+						"border": new javax.swing.border.EmptyBorder( 0, 0, 0, 0 )
+					}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+						"value": "cell 0 4"
+					} )
+					add( new FormComponent( "org.jdesktop.swingx.JXColorSelectionButton" ) {
+						name: "xColorSelectionButton1"
+						"text": "text"
+						"background": new java.awt.Color( 22, 136, 255, 255 )
+						addEvent( new FormEvent( "java.beans.PropertyChangeListener", "propertyChange", "xColorSelectionButton1PropertyChange", true, "background" ) )
+					}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+						"value": "cell 1 4,alignx left,growx 0"
+					} )
+					add( new FormComponent( "org.jdesktop.swingx.JXHyperlink" ) {
+						name: "xHyperlink1"
+						"text": "https://github.com/MetalAZ/swing-app"
+						"focusPainted": false
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "xHyperlink1", true ) )
+					}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+						"value": "cell 0 5"
+					} )
+				} )
+			}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+				"value": "cell 0 0,dock center"
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 690, 360 )
+		} )
+	}
+}

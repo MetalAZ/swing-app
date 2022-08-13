@@ -7,13 +7,12 @@ package com.example.ui;
 import com.example.config.AppConfig;
 import com.example.util.AppUtils;
 import net.miginfocom.swing.MigLayout;
+import org.jdesktop.swingx.JXHyperlink;
 
 import javax.swing.*;
 import javax.swing.border.EmptyBorder;
 import java.awt.*;
 import java.awt.event.ActionEvent;
-import java.awt.event.MouseAdapter;
-import java.awt.event.MouseEvent;
 
 /**
  * @author unknown
@@ -37,32 +36,16 @@ public class AboutFrame extends JDialog {
         copyright.setText(AppConfig.COPYRIGHT_DETAILS);
         javaRuntime.setText("Java runtime %s".formatted(Runtime.version()));
         versionInfo.setText("Version %s".formatted(AppUtils.getAppVersion()));
-
-        appIconBy.setText("<html><a href=''>%s</a></html>".formatted("App icon by Design Circle - Flaticon"));
-        appIconBy.setCursor(new Cursor(Cursor.HAND_CURSOR));
-        appIconBy.addMouseListener(new MouseAdapter() {
-            @Override
-            public void mouseClicked(MouseEvent e) {
-                if (!AppUtils.openUrlInBrowser("https://www.flaticon.com/authors/design-circle")) {
-                    JOptionPane.showMessageDialog(owner, "Unable to open URL in browser.", "Open Failed", JOptionPane.ERROR_MESSAGE);
-                }
-            }
-        });
-
-        websiteLink.setText("<html><a href=''>%s</a></html>".formatted(AppConfig.HOME_URL));
-        websiteLink.setCursor(new Cursor(Cursor.HAND_CURSOR));
-        websiteLink.addMouseListener(new MouseAdapter() {
-            @Override
-            public void mouseClicked(MouseEvent e) {
-                if (!AppUtils.openUrlInBrowser(AppConfig.HOME_URL)) {
-                    JOptionPane.showMessageDialog(owner, "Unable to open URL in browser.", "Open Failed", JOptionPane.ERROR_MESSAGE);
-                }
-            }
-        });
+        websiteLink.setText(AppConfig.HOME_URL);
+        websiteLink.setActionCommand(AppConfig.HOME_URL);
     }
 
     private void okClicked(ActionEvent e) {
         this.dispose();
+    }
+
+    private void linkClicked(ActionEvent e) {
+        AppUtils.openUrlInBrowser(e.getActionCommand());
     }
 
     private void initComponents() {
@@ -76,8 +59,9 @@ public class AboutFrame extends JDialog {
         versionInfo = new JLabel();
         javaRuntime = new JLabel();
         appIconBy = new JLabel();
+        appIconByLink = new JXHyperlink();
         vSpacer2 = new JPanel(null);
-        websiteLink = new JLabel();
+        websiteLink = new JXHyperlink();
         copyright = new JLabel();
         buttonBar = new JPanel();
         okButton = new JButton();
@@ -106,6 +90,7 @@ public class AboutFrame extends JDialog {
                                 "[fill]",
                         // rows
                         "[]" +
+                                "[]" +
                                 "[]" +
                                 "[]" +
                                 "[]" +
@@ -147,20 +132,29 @@ public class AboutFrame extends JDialog {
                 contentPanel.add(panel1, "cell 2 0");
 
                 //---- appIconBy ----
-                appIconBy.setText("App icon by...");
-                contentPanel.add(appIconBy, "cell 2 1,pushx,growx");
+                appIconBy.setText("App icon by");
+                contentPanel.add(appIconBy, "cell 2 1,pushx,alignx left,growx 0");
+
+                //---- appIconByLink ----
+                appIconByLink.setText("Design Circle - Flaticon");
+                appIconByLink.setActionCommand("https://www.flaticon.com/authors/design-circle");
+                appIconByLink.setFocusPainted(false);
+                appIconByLink.addActionListener(e -> linkClicked(e));
+                contentPanel.add(appIconByLink, "cell 2 1");
 
                 //---- vSpacer2 ----
                 vSpacer2.setMinimumSize(new Dimension(10, 10));
                 contentPanel.add(vSpacer2, "cell 2 2");
 
                 //---- websiteLink ----
-                websiteLink.setText("http://...");
-                contentPanel.add(websiteLink, "cell 2 3");
+                websiteLink.setText("text");
+                websiteLink.setFocusPainted(false);
+                websiteLink.addActionListener(e -> linkClicked(e));
+                contentPanel.add(websiteLink, "cell 2 4");
 
                 //---- copyright ----
                 copyright.setText("Copyright...");
-                contentPanel.add(copyright, "cell 2 4");
+                contentPanel.add(copyright, "cell 2 5");
             }
             dialogPane.add(contentPanel, BorderLayout.CENTER);
 
@@ -196,8 +190,9 @@ public class AboutFrame extends JDialog {
     private JLabel versionInfo;
     private JLabel javaRuntime;
     private JLabel appIconBy;
+    private JXHyperlink appIconByLink;
     private JPanel vSpacer2;
-    private JLabel websiteLink;
+    private JXHyperlink websiteLink;
     private JLabel copyright;
     private JPanel buttonBar;
     private JButton okButton;

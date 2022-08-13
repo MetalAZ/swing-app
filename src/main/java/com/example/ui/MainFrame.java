@@ -37,6 +37,11 @@ public class MainFrame extends JFrame {
         setIcons();
         setJMenuBar(appMenu);
         setTitle(AppConfig.APP_NAME);
+
+        examplePane.add(new ControlPanel());
+
+        helloMessage.requestFocus();
+
         pack();
 
         setLocationRelativeTo(null); // Centers Window
@@ -108,6 +113,7 @@ public class MainFrame extends JFrame {
         textArea3 = new JTextArea();
         check4 = new JLabel();
         textArea4 = new JTextArea();
+        examplePane = new JPanel();
         appMenu = new JMenuBar();
         themeMenu = new JMenu();
         lightTheme = new JCheckBoxMenuItem();
@@ -262,6 +268,18 @@ public class MainFrame extends JFrame {
                     scrollPane1.setViewportView(panel3);
                 }
                 tabbedPane1.addTab("Features", scrollPane1);
+
+                //======== examplePane ========
+                {
+                    examplePane.setBorder(BorderFactory.createEmptyBorder());
+                    examplePane.setLayout(new MigLayout(
+                            "fillx,hidemode 3",
+                            // columns
+                            "[fill]",
+                            // rows
+                            "[]"));
+                }
+                tabbedPane1.addTab("Controls", examplePane);
             }
             panel2.add(tabbedPane1, "cell 0 0,aligny top,growy 0");
         }
@@ -324,6 +342,7 @@ public class MainFrame extends JFrame {
     private JTextArea textArea3;
     private JLabel check4;
     private JTextArea textArea4;
+    private JPanel examplePane;
     private JMenuBar appMenu;
     private JMenu themeMenu;
     private JCheckBoxMenuItem lightTheme;

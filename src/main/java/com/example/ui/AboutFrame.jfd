@@ -16,7 +16,7 @@ new FormModel {
 				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class net.miginfocom.swing.MigLayout ) {
 					"$layoutConstraints": "fillx,insets dialog,hidemode 3,gap 8 4"
 					"$columnConstraints": "[fill][fill][fill]"
-					"$rowConstraints": "[][][][][][][][]"
+					"$rowConstraints": "[][][][][][][][][]"
 				} ) {
 					name: "contentPanel"
 					"border": new javax.swing.border.EmptyBorder( 5, 25, 5, 25 )
@@ -61,9 +61,18 @@ new FormModel {
 					} )
 					add( new FormComponent( "javax.swing.JLabel" ) {
 						name: "appIconBy"
-						"text": "App icon by..."
+						"text": "App icon by"
 					}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
-						"value": "cell 2 1,pushx,growx"
+						"value": "cell 2 1,pushx,alignx left,growx 0"
+					} )
+					add( new FormComponent( "org.jdesktop.swingx.JXHyperlink" ) {
+						name: "appIconByLink"
+						"text": "Design Circle - Flaticon"
+						"actionCommand": "https://www.flaticon.com/authors/design-circle"
+						"focusPainted": false
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "linkClicked", true ) )
+					}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+						"value": "cell 2 1"
 					} )
 					add( new FormComponent( "com.jformdesigner.designer.wrapper.VSpacer" ) {
 						name: "vSpacer2"
@@ -71,17 +80,19 @@ new FormModel {
 					}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
 						"value": "cell 2 2"
 					} )
-					add( new FormComponent( "javax.swing.JLabel" ) {
+					add( new FormComponent( "org.jdesktop.swingx.JXHyperlink" ) {
 						name: "websiteLink"
-						"text": "http://..."
+						"text": "text"
+						"focusPainted": false
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "linkClicked", true ) )
 					}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
-						"value": "cell 2 3"
+						"value": "cell 2 4"
 					} )
 					add( new FormComponent( "javax.swing.JLabel" ) {
 						name: "copyright"
 						"text": "Copyright..."
 					}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
-						"value": "cell 2 4"
+						"value": "cell 2 5"
 					} )
 				}, new FormLayoutConstraints( class java.lang.String ) {
 					"value": "Center"
