@@ -7,7 +7,8 @@ distributed. Installers it generates includes only the necessary files in order 
 computer, which can be as small as 50mb. It doesn't require end-users install (or have installed) the Java runtime
 and it doesn't include the full Java runtime.
 
-This example application includes theming, obfuscation, packaging, and generating the installers.
+This example application includes theming, obfuscation, packaging, and generating the installers. **The
+[pom.xml](pom.xml) is the most important part since it brings all these things together.**
 
 ### Disclaimer
 

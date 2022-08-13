@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0cb700bb-deb0-48e7-b52e-381d10363ecb" name="Changes" comment="Updated screenshots to match themes">
+    <list default="true" id="0cb700bb-deb0-48e7-b52e-381d10363ecb" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/theme/custom/Dark.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/theme/custom/Dark.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/theme/custom/Light.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/theme/custom/Light.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -231,6 +230,8 @@
       <workItem from="1660310348013" duration="790000" />
       <workItem from="1660312006198" duration="1674000" />
       <workItem from="1660316265266" duration="1457000" />
+      <workItem from="1660398006187" duration="105000" />
+      <workItem from="1660398446120" duration="45000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1659795804032</created>
@@ -470,7 +471,14 @@
       <option name="project" value="LOCAL" />
       <updated>1660317072535</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary="Custom theme modifications">
+      <created>1660398099286</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1660398099286</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -480,7 +488,6 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Updated for clarification" />
     <MESSAGE value="Updates hello message when enter key is pressed" />
     <MESSAGE value="Fixed about window mode and updates app menu mnemonics" />
     <MESSAGE value="Set minimum window dimensions" />
@@ -505,6 +512,7 @@
     <MESSAGE value="Updated light/dark themes to use custom ones" />
     <MESSAGE value="Updated screenshots to match themes" />
     <MESSAGE value="Obfuscation no longer breaks custom themes" />
-    <option name="LAST_COMMIT_MESSAGE" value="Obfuscation no longer breaks custom themes" />
+    <MESSAGE value="Custom theme modifications" />
+    <option name="LAST_COMMIT_MESSAGE" value="Custom theme modifications" />
   </component>
 </project>
