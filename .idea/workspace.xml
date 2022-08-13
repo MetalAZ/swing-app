@@ -6,7 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="0cb700bb-deb0-48e7-b52e-381d10363ecb" name="Changes" comment="Updated screenshots to match themes">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/theme/custom/Dark.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/theme/custom/Dark.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/theme/custom/Light.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/theme/custom/Light.properties" afterDir="false" />
     </list>
@@ -49,21 +48,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/home/greg/Development/Java/swing-app/src/main/resources/com/example/theme/custom",
-    "node.js.detected.package.eslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "editor.preferences.completion",
-    "typescript.add.unambiguous.imports.on.the.fly": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/greg/Development/Java/swing-app/src/main/resources/com/example/theme/custom&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.completion&quot;,
+    &quot;typescript.add.unambiguous.imports.on.the.fly&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/resources/com/example/theme/custom" />
@@ -231,7 +230,7 @@
       <workItem from="1660301780478" duration="158000" />
       <workItem from="1660310348013" duration="790000" />
       <workItem from="1660312006198" duration="1674000" />
-      <workItem from="1660316265266" duration="769000" />
+      <workItem from="1660316265266" duration="1457000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1659795804032</created>
@@ -464,7 +463,14 @@
       <option name="project" value="LOCAL" />
       <updated>1660313058082</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="Obfuscation no longer breaks custom themes">
+      <created>1660317072535</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1660317072535</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -474,7 +480,6 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Fixed package name" />
     <MESSAGE value="Updated for clarification" />
     <MESSAGE value="Updates hello message when enter key is pressed" />
     <MESSAGE value="Fixed about window mode and updates app menu mnemonics" />
@@ -499,6 +504,7 @@
     <MESSAGE value="Added separate app-image configs based on platform" />
     <MESSAGE value="Updated light/dark themes to use custom ones" />
     <MESSAGE value="Updated screenshots to match themes" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated screenshots to match themes" />
+    <MESSAGE value="Obfuscation no longer breaks custom themes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Obfuscation no longer breaks custom themes" />
   </component>
 </project>
