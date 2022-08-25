@@ -204,6 +204,9 @@
                             <mainClass>${main-class}</mainClass>
                             <addDefaultImplementationEntries>true</addDefaultImplementationEntries>
                         </manifest>
+                        <manifestEntries>
+                            <Add-Opens>java.desktop/sun.awt.X11</Add-Opens>
+                        </manifestEntries>
                     </archive>
                 </configuration>
             </plugin>

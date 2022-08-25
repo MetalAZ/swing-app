@@ -6,8 +6,11 @@
   <component name="ChangeListManager">
     <list default="true" id="0cb700bb-deb0-48e7-b52e-381d10363ecb" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/App.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/theme/custom/Dark.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/theme/custom/Dark.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/theme/custom/Light.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/theme/custom/Light.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/packaging/win-jpackage.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/packaging/win-jpackage.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -248,6 +251,11 @@
       <workItem from="1660571287482" duration="323000" />
       <workItem from="1660572738716" duration="47000" />
       <workItem from="1660655963120" duration="612000" />
+      <workItem from="1660667536770" duration="88000" />
+      <workItem from="1660668268720" duration="23000" />
+      <workItem from="1660736922400" duration="1182000" />
+      <workItem from="1660748353392" duration="31000" />
+      <workItem from="1661437600038" duration="14000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1659795804032</created>
@@ -571,7 +579,14 @@
       <option name="project" value="LOCAL" />
       <updated>1660571590071</updated>
     </task>
-    <option name="localTasksCounter" value="47" />
+    <task id="LOCAL-00047" summary="More small updates to themes">
+      <created>1660667604040</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1660667604040</updated>
+    </task>
+    <option name="localTasksCounter" value="48" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -592,7 +607,6 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Small refactor" />
     <MESSAGE value="Updated macOS icns file from png" />
     <MESSAGE value="Corrected filename" />
     <MESSAGE value="Added known build issues part" />
@@ -617,6 +631,7 @@
     <MESSAGE value="Small fix" />
     <MESSAGE value="Fixed wrong return value" />
     <MESSAGE value="Small updated to themes" />
-    <option name="LAST_COMMIT_MESSAGE" value="Small updated to themes" />
+    <MESSAGE value="More small updates to themes" />
+    <option name="LAST_COMMIT_MESSAGE" value="More small updates to themes" />
   </component>
 </project>

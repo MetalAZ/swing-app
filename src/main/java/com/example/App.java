@@ -4,11 +4,16 @@ import com.example.config.AppConfig;
 import com.example.ui.MainFrame;
 import com.formdev.flatlaf.FlatLaf;
 import com.formdev.flatlaf.util.SystemInfo;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import javax.swing.*;
 import java.awt.*;
+import java.lang.reflect.InaccessibleObjectException;
 
 public class App {
+    private static final Logger LOGGER = LoggerFactory.getLogger(App.class);
+
     public static void main(String[] args) {
         // macOS  (see https://www.formdev.com/flatlaf/macos/)
         if (SystemInfo.isMacOS) {
@@ -31,6 +36,15 @@ public class App {
             // enable custom window decorations
             JFrame.setDefaultLookAndFeelDecorated(true);
             JDialog.setDefaultLookAndFeelDecorated(true);
+
+            try {
+                var toolkit = Toolkit.getDefaultToolkit();
+                var awtAppClassNameField = toolkit.getClass().getDeclaredField("awtAppClassName");
+                awtAppClassNameField.setAccessible(true);
+                awtAppClassNameField.set(toolkit, AppConfig.APP_NAME);
+            } catch (NoSuchFieldException | InaccessibleObjectException | IllegalAccessException e) {
+                LOGGER.debug("Failed to set proper app name");
+            }
         }
 
         FlatLaf.registerCustomDefaultsSource("com.example.theme.custom");

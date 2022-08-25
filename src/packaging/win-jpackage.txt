@@ -1,8 +1,8 @@
 --type msi
 --name "${app.name}"
 --win-menu
---win-menu-group ${windows.vendor}
---vendor ${windows.vendor}
+--win-menu-group ${app.vendor}
+--vendor ${app.vendor}
 --icon ${project.basedir}\src\main\resources\icons\app-icon.ico
 --dest ${project.build.directory}
 --main-jar ${project.build.finalName}-pg.jar
